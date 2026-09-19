@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product & Gifting Enquiry | Aura Barware</title>
+  <meta name="description" content="Submit a product enquiry or request a custom laser engraving quote for Aura Barware luxury decanters, glassware, and cocktail tool sets.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'brand-blue': {
+              DEFAULT: '#f0b429',
+              hover: '#d99f1e',
+              dark: '#b8893d',
+            },
+            'charcoal': {
+              900: '#0a0a0a',
+              800: '#161616',
+              700: '#1f1f1f',
+              600: '#2e2e2e',
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Outfit', 'sans-serif'],
+          },
+          fontWeight: {
+            light: '300',
+            normal: '410',
+            medium: '500',
+            semibold: '520',
+            bold: '500',
+            extrabold: '540',
+            black: '580',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-charcoal-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- NAVBAR -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 bg-white dark:bg-[#0a0a0a]/95 border-b border-gray-200 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-2">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-lg md:text-xl font-bold shrink-0 whitespace-nowrap">
+          <span class="text-brand-blue">
+            <i class="fas fa-martini-glass-citrus"></i>
+          </span>
+          <span class="text-gray-900 dark:text-white whitespace-nowrap">AURA BARWARE</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-3 xl:gap-8 lg:mx-3 xl:mx-8 shrink-0">
+          <a href="index.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 1</a>
+          <a href="home2.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 2</a>
+          <a href="products.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Products</a>
+          <a href="recipes.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Recipes</a>
+          <a href="gifting.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Gifting</a>
+          <a href="contact.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Contact</a>
+        </nav>
+
+        <!-- Right Action Items -->
+        <div class="hidden lg:flex items-center space-x-2 gap-2 shrink-0">
+          <button class="theme-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle Theme">
+            <i class="theme-toggle-icon fas fa-sun text-yellow-400"></i>
+          </button>
+          <button class="rtl-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle RTL/LTR">
+            <i class="fas fa-right-left text-brand-blue"></i>
+          </button>
+          <div class="h-6 w-px bg-gray-200 dark:bg-gray-700/50"></div>
+          <a href="enquire.html" class="bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold text-xs tracking-widest uppercase px-4 xl:px-5 py-2.5 rounded-full transition-all duration-300 shadow-md whitespace-nowrap">Enquire</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden flex items-center space-x-2 gap-2">
+          <button id="mobile-menu-btn" class="text-gray-800 dark:text-white hover:text-brand-blue focus:outline-none p-2 rounded-md transition-colors" aria-label="Open Menu">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="fixed inset-y-0 right-0 z-[100] w-full max-w-xs bg-white/95 dark:bg-charcoal-900/95 backdrop-blur-md shadow-2xl p-6 border-l border-gray-200 dark:border-white/10 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-lg font-bold group">
+          <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
+          <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+        </a>
+        <button id="mobile-menu-close-btn" class="text-gray-800 dark:text-white hover:text-brand-blue p-2 focus:outline-none" aria-label="Close Menu">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-4">
+        <a href="index.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Home 1</a>
+        <a href="home2.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Home 2</a>
+        <a href="products.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Products</a>
+        <a href="recipes.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Recipes</a>
+        <a href="gifting.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Gifting</a>
+        <a href="contact.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Contact</a>
+        <a href="enquire.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Enquire</a>
+      </nav>
+    </div>
+
+    <div class="mt-8 pt-6 border-t border-gray-200 dark:border-white/10 flex flex-col space-y-4">
+      <div class="flex items-center justify-around py-2 bg-gray-100 dark:bg-black/25 rounded-xl border border-gray-200 dark:border-white/5">
+        <button class="theme-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
+          <i class="theme-toggle-icon fas fa-sun text-yellow-500"></i>
+          <span>Theme</span>
+        </button>
+        <div class="h-6 w-px bg-gray-300 dark:bg-white/10"></div>
+        <button class="rtl-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
+          <i class="fas fa-right-left text-brand-blue"></i>
+          <span>RTL</span>
+        </button>
+      </div>
+      <a href="enquire.html" class="block text-center py-2.5 bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold rounded-full shadow-lg transition-all">Enquire Now</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[48vh] flex items-center justify-center pt-36 md:pt-44 pb-16 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(10, 10, 10, 0.82), rgba(10, 10, 10, 0.94)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1920&q=80');">
+    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brand-blue/15 text-brand-blue border border-brand-blue/30">
+        <i class="fas fa-handshake"></i> Direct Concierge & Trade Services
+      </span>
+      <h1 class="hero-heading text-white max-w-heading mx-auto">Product & Gifting Enquiry</h1>
+      <p class="body-text text-gray-300 max-w-paragraph mx-auto">
+        Submit specifications for custom laser monogramming, luxury corporate presentation boxes, or hospitality trade barware quotes.
+      </p>
+    </div>
+  </section>
+
+  <!-- QUICK TRUST PERKS BAR -->
+  <section class="py-6 bg-slate-100 dark:bg-charcoal-800 border-y border-gray-200 dark:border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-xs font-semibold uppercase tracking-wider text-gray-700 dark:text-gray-300">
+        <div class="flex items-center justify-center gap-2">
+          <i class="fas fa-bolt text-brand-blue text-sm"></i>
+          <span>24-Hour 3D Digital Proof</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i class="fas fa-shield-halved text-brand-blue text-sm"></i>
+          <span>100% Transit Guarantee</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i class="fas fa-building-user text-brand-blue text-sm"></i>
+          <span>Hospitality Trade Rates</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i class="fas fa-plane text-brand-blue text-sm"></i>
+          <span>Worldwide Express Shipping</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ENQUIRY FORM & CONCIERGE INFO SECTION -->
+  <section class="py-20 bg-slate-50 dark:bg-charcoal-800 border-t border-gray-100 dark:border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+        <!-- Form Column (8 cols) -->
+        <div class="lg:col-span-8 bg-white dark:bg-charcoal-900 border border-gray-200 dark:border-white/10 p-8 md:p-10 rounded-3xl shadow-xl space-y-8">
+          
+          <div class="space-y-2 border-b border-gray-100 dark:border-white/5 pb-6">
+            <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Personalized Proposal Request</span>
+            <h2 class="font-serif font-bold text-gray-900 dark:text-white text-2xl">Submit Enquiry Details</h2>
+            <p class="text-xs text-gray-600 dark:text-gray-400">
+              Fill out the parameters below and our concierge team will email a comprehensive quote and digital artwork proof within 24 hours.
+            </p>
+          </div>
+
+          <form id="contact-form" class="space-y-6">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div>
+                <label for="enquiry-name" class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold mb-2">Full Name *</label>
+                <input type="text" id="enquiry-name" required placeholder="Julian Vance" class="w-full bg-slate-50 dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-xl px-4 py-3.5 text-xs focus:outline-none focus:border-brand-blue transition-colors">
+              </div>
+
+              <div>
+                <label for="enquiry-email" class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold mb-2">Email Address *</label>
+                <input type="email" id="enquiry-email" required placeholder="vance@grandlounge.com" class="w-full bg-slate-50 dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-xl px-4 py-3.5 text-xs focus:outline-none focus:border-brand-blue transition-colors">
+              </div>
+
+              <div>
+                <label for="enquiry-phone" class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold mb-2">Phone Number *</label>
+                <input type="tel" id="enquiry-phone" required placeholder="+1 (800) 555-0192" class="w-full bg-slate-50 dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-xl px-4 py-3.5 text-xs focus:outline-none focus:border-brand-blue transition-colors">
+              </div>
+
+              <div>
+                <label for="enquiry-company" class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold mb-2">Company / Residence Name</label>
+                <input type="text" id="enquiry-company" placeholder="The Grand Lounge / Sterling Estate" class="w-full bg-slate-50 dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-xl px-4 py-3.5 text-xs focus:outline-none focus:border-brand-blue transition-colors">
+              </div>
+
+            </div>
+
+            <!-- Subject & Volume Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div>
+                <label for="enquiry-type" class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold mb-2">Enquiry Primary Subject *</label>
+                <select id="enquiry-type" class="w-full bg-slate-50 dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-xl px-4 py-3.5 text-xs focus:outline-none focus:border-brand-blue transition-colors">
+                  <option>Custom Monogram Laser Engraving</option>
+                  <option>Executive Corporate Gift Sets</option>
+                  <option>Crystal Glassware & Decanter Advice</option>
+                  <option>Wholesale & Hospitality Barware Order</option>
+                  <option>Bespoke Velvet Box Packaging</option>
+                  <option>General Product Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="enquiry-quantity" class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold mb-2">Estimated Quantity *</label>
+                <select id="enquiry-quantity" class="w-full bg-slate-50 dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-xl px-4 py-3.5 text-xs focus:outline-none focus:border-brand-blue transition-colors">
+                  <option>1 - 5 Sets (Personal / Gift)</option>
+                  <option>6 - 25 Sets (Executive Corporate)</option>
+                  <option>26 - 100+ Sets (Hospitality / Trade Bulk)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Optional Custom Extras Checkboxes -->
+            <div class="space-y-3 pt-2">
+              <span class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold">Include Complimentary Services:</span>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                <label class="flex items-center gap-2 p-3 bg-slate-50 dark:bg-charcoal-800 rounded-xl border border-gray-200 dark:border-white/5 cursor-pointer">
+                  <input type="checkbox" checked class="accent-brand-blue">
+                  <span>Digital 3D Proof</span>
+                </label>
+                <label class="flex items-center gap-2 p-3 bg-slate-50 dark:bg-charcoal-800 rounded-xl border border-gray-200 dark:border-white/5 cursor-pointer">
+                  <input type="checkbox" checked class="accent-brand-blue">
+                  <span>Velvet Box Case</span>
+                </label>
+                <label class="flex items-center gap-2 p-3 bg-slate-50 dark:bg-charcoal-800 rounded-xl border border-gray-200 dark:border-white/5 cursor-pointer">
+                  <input type="checkbox" class="accent-brand-blue">
+                  <span>Express Dispatch</span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label for="enquiry-msg" class="block text-xs uppercase tracking-wider text-gray-600 dark:text-gray-400 font-bold mb-2">Detailed Specifications & Design Notes *</label>
+              <textarea id="enquiry-msg" rows="5" required placeholder="Describe desired initials (e.g. 'J.V.'), logo SVG requests, delivery deadline, or spirit glass preferences..." class="w-full bg-slate-50 dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-xl px-4 py-3.5 text-xs focus:outline-none focus:border-brand-blue transition-colors"></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full py-4 text-xs font-bold uppercase tracking-widest text-black bg-brand-blue hover:bg-brand-blue-hover rounded-full transition-all shadow-lg hover:shadow-brand-blue/20">
+                Submit Official Proposal Request
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- Right Side Concierge Card (4 cols) -->
+        <div class="lg:col-span-4 space-y-6">
+
+          <!-- Concierge Card -->
+          <div class="bg-gradient-to-br from-charcoal-800 to-black border border-brand-blue/20 p-8 rounded-3xl space-y-6 text-white shadow-2xl">
+            
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-full bg-brand-blue/20 flex items-center justify-center text-brand-blue text-base shrink-0">
+                <i class="fas fa-headset"></i>
+              </span>
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-brand-blue block">Direct Line</span>
+                <h3 class="font-serif font-bold text-base">Mixology Concierge</h3>
+              </div>
+            </div>
+
+            <p class="text-xs text-gray-300 leading-relaxed">
+              Prefer immediate phone consultation or email assistance? Contact our master barware specialists directly.
+            </p>
+
+            <div class="space-y-4 text-xs border-t border-white/10 pt-4">
+              <div class="flex items-center gap-3">
+                <i class="fas fa-phone text-brand-blue w-4"></i>
+                <span class="font-semibold">+1 (800) 555-0192</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fas fa-envelope text-brand-blue w-4"></i>
+                <span class="font-semibold">concierge@aurabarware.com</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fas fa-clock text-brand-blue w-4"></i>
+                <span class="text-gray-400">Mon-Sun: 8:00 AM - 10:00 PM EST</span>
+              </div>
+            </div>
+
+            <div class="p-4 bg-white/5 rounded-2xl border border-white/5 flex items-center gap-3">
+              <i class="fas fa-circle-check text-brand-blue text-lg shrink-0"></i>
+              <span class="text-[11px] text-gray-300 font-medium leading-tight">Average response time: under 2 hours during business hours.</span>
+            </div>
+
+          </div>
+
+          <!-- Customer Quote Highlight Card -->
+          <div class="bg-white dark:bg-charcoal-900 border border-gray-200 dark:border-white/5 p-6 rounded-3xl space-y-4">
+            <div class="flex text-brand-blue text-xs gap-1">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-xs italic text-gray-600 dark:text-gray-400 leading-relaxed">
+              "We ordered 50 monogrammed decanter sets for our executive retreat. Aura delivered initial 3D proofs within hours and shipped flawlessly packed velvet boxes."
+            </p>
+            <div class="flex items-center gap-3 pt-2">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" alt="Marcus Sterling" class="w-8 h-8 rounded-full object-cover">
+              <div>
+                <h4 class="font-bold text-xs text-gray-900 dark:text-white">Marcus Sterling</h4>
+                <p class="text-[10px] text-gray-500">Private Host & Collector</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS FLOW TIMELINE SECTION -->
+  
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-50 dark:bg-[#0a0a0a] border-t border-gray-200 dark:border-white/10 py-16 text-gray-700 dark:text-gray-300 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-xl md:text-2xl font-bold group">
+            <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
+            <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+          </a>
+          <p class="text-xs leading-relaxed text-gray-700 dark:text-gray-300">
+            Your premier source for sleek home bar essentials, hand-blown lead-free crystal glassware, precision cocktail tools, decanters, and luxury gifting.
+          </p>
+          <div class="flex space-x-4 gap-1.5 pt-2">
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-brand-blue transition-colors">Home 1</a></li>
+            <li><a href="home2.html" class="hover:text-brand-blue transition-colors">Home 2</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Products by Category</a></li>
+            <li><a href="recipes.html" class="hover:text-brand-blue transition-colors">Cocktail Recipes</a></li>
+            <li><a href="gifting.html" class="hover:text-brand-blue transition-colors">Curated Gift Sets</a></li>
+            <li><a href="contact.html" class="hover:text-brand-blue transition-colors">Contact Us</a></li>
+            <li><a href="enquire.html" class="hover:text-brand-blue transition-colors">Product Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Categories</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Crystal Glassware</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Bar Tools & Shakers</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Spirits Accessories</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Decanters & Carafes</a></li>
+            <li><a href="gifting.html" class="hover:text-brand-blue transition-colors">Corporate Engraving</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Mixology Club</h4>
+          <p class="text-xs text-gray-700 dark:text-gray-300">Subscribe for seasonal cocktail recipes, barware care guides, and VIP new release access.</p>
+          <form id="newsletter-form" class="space-y-2">
+            <div class="relative">
+              <input type="email" placeholder="Email Address" required class="w-full bg-white dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-full ltr:pl-4 ltr:pr-20 rtl:pr-4 rtl:pl-20 py-2 text-xs focus:outline-none focus:border-brand-blue">
+              <button type="submit" class="absolute ltr:right-1.5 rtl:left-1.5 top-1.5 bg-brand-blue hover:bg-brand-blue-hover text-black px-3 py-1 rounded-full text-xs font-bold">Join</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-200 dark:border-white/5 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-600 dark:text-gray-400 gap-4">
+        <p>&copy; 2026 Aura Barware. All rights reserved. Premium Home Bar & Cocktail Accessories Store.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-gray-900 dark:hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-900 dark:hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-gray-900 dark:hover:text-white">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

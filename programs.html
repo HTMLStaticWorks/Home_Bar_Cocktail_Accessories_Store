@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products by Category | Aura Barware</title>
+  <meta name="description"
+    content="Explore Aura Barware's luxury catalog including crystal glassware, Japanese precision cocktail tools, decanters, and spirits accessories.">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'brand-blue': {
+              DEFAULT: '#f0b429',
+              hover: '#d99f1e',
+              dark: '#b8893d',
+            },
+            'charcoal': {
+              900: '#0a0a0a',
+              800: '#161616',
+              700: '#1f1f1f',
+              600: '#2e2e2e',
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Outfit', 'sans-serif'],
+          },
+          fontWeight: {
+            light: '300',
+            normal: '410',
+            medium: '500',
+            semibold: '520',
+            bold: '500',
+            extrabold: '540',
+            black: '580',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-charcoal-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- NAVBAR -->
+  <header id="main-header"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 bg-white dark:bg-[#0a0a0a]/95 border-b border-gray-200 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-2">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-wider text-base sm:text-lg md:text-xl font-bold shrink-0 whitespace-nowrap">
+          <span class="text-brand-blue">
+            <i class="fas fa-martini-glass-citrus"></i>
+          </span>
+          <span>AURA BARWARE</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-2 xl:gap-6 lg:mx-2 xl:mx-4 shrink">
+          <a href="index.html"
+            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 1</a>
+          <a href="home2.html"
+            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 2</a>
+          <a href="products.html"
+            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-900 dark:text-white hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap border-brand-blue">Products</a>
+          <a href="recipes.html"
+            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Recipes</a>
+          <a href="gifting.html"
+            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Gifting</a>
+          <a href="contact.html"
+            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Contact</a>
+        </nav>
+
+        <!-- Right Action Items -->
+        <div class="hidden lg:flex items-center space-x-2 gap-2 shrink-0">
+          <button class="theme-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle Theme">
+            <i class="theme-toggle-icon fas fa-sun text-yellow-400"></i>
+          </button>
+          <button class="rtl-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle RTL/LTR">
+            <i class="fas fa-right-left text-brand-blue"></i>
+          </button>
+          <div class="h-6 w-px bg-gray-200 dark:bg-gray-700/50"></div>
+          <a href="enquire.html" class="bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold text-xs tracking-widest uppercase px-4 xl:px-5 py-2.5 rounded-full transition-all duration-300 shadow-md whitespace-nowrap">Enquire</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden flex items-center space-x-2 gap-2">
+          <button id="mobile-menu-btn" class="text-gray-800 dark:text-white hover:text-brand-blue focus:outline-none p-2 rounded-md transition-colors" aria-label="Open Menu">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="fixed inset-y-0 right-0 z-[100] w-full max-w-xs bg-white/95 dark:bg-charcoal-900/95 backdrop-blur-md shadow-2xl p-6 border-l border-gray-200 dark:border-white/10 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-lg font-bold group">
+          <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
+          <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+        </a>
+        <button id="mobile-menu-close-btn" class="text-gray-800 dark:text-white hover:text-brand-blue p-2 focus:outline-none" aria-label="Close Menu">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col space-y-4">
+        <a href="index.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Home 1</a>
+        <a href="home2.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Home 2</a>
+        <a href="products.html" class="nav-link text-base font-semibold text-brand-blue transition-colors py-1 border-b border-white/5">Products</a>
+        <a href="recipes.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Recipes</a>
+        <a href="gifting.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Gifting</a>
+        <a href="contact.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Contact</a>
+        <a href="enquire.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Enquire</a>
+      </nav>
+    </div>
+
+    <div class="mt-8 pt-6 border-t border-gray-200 dark:border-white/10 flex flex-col space-y-4">
+      <div class="flex items-center justify-around py-2 bg-gray-100 dark:bg-black/25 rounded-xl border border-gray-200 dark:border-white/5">
+        <button class="theme-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
+          <i class="theme-toggle-icon fas fa-sun text-yellow-500"></i>
+          <span>Theme</span>
+        </button>
+        <div class="h-6 w-px bg-gray-300 dark:bg-white/10"></div>
+        <button class="rtl-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
+          <i class="fas fa-right-left text-brand-blue"></i>
+          <span>RTL</span>
+        </button>
+      </div>
+      <a href="enquire.html" class="block text-center py-2.5 bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold rounded-full shadow-lg transition-all">Enquire Now</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section
+    class="inner-hero relative min-h-[50vh] flex items-center justify-center pt-40 md:pt-48 pb-16 overflow-hidden bg-cover bg-center"
+    style="background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95)), url('assets/images/program_advanced_training.png');">
+    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Artisanal Craftsmanship</span>
+      <h1 class="hero-heading text-white max-w-heading mx-auto">Barware Products & Collections</h1>
+      <p class="body-text text-gray-300 max-w-paragraph mx-auto">
+        Handcrafted crystal glassware, Japanese precision mixing tools, and luxury spirits accessories designed for the modern mixologist.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS CATALOG GRID SECTION -->
+  <section class="py-24 bg-white dark:bg-charcoal-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 space-y-3">
+        <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Curated Essentials</span>
+        <h2 class="section-heading text-gray-900 dark:text-white max-w-heading mx-auto">Catalog Collection</h2>
+        <p class="body-text text-gray-600 dark:text-gray-400 max-w-paragraph mx-auto">
+          Explore our premier home bar equipment, crystal carafes, and precision strainers.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+        <button class="bg-brand-blue text-black font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full shadow-sm">All Products</button>
+        <button class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Crystal Glassware</button>
+        <button class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Shakers & Strainers</button>
+        <button class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Decanters & Ice</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Product 1 -->
+        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Hand-Blown Crystal Whiskey Decanter" class="w-full h-full object-cover">
+              <span class="absolute top-4 ltr:right-4 rtl:left-4 bg-brand-blue text-black font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">Bestseller</span>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Decanters</span>
+                <span class="text-brand-blue font-bold text-base">$145.00</span>
+              </div>
+              <h3 class="card-heading text-gray-900 dark:text-white">Crystal Monogram Decanter</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Heavyweight 750ml hand-blown lead-free crystal decanter with ground glass stopper and custom monogram engraving.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
+              <img src="assets/images/program_beginner_classes.png" alt="Japanese Gold Cocktail Shaker Kit" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Bar Tools</span>
+                <span class="text-brand-blue font-bold text-base">$120.00</span>
+              </div>
+              <h3 class="card-heading text-gray-900 dark:text-white">Japanese Gold Shaker Set</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Precision-balanced 18/8 stainless steel 28oz & 18oz Boston shaker pair with titanium gold PVD plating.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
+              <img src="assets/images/fencing_session.png" alt="Facet Cut Coupe Glasses" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Glassware</span>
+                <span class="text-brand-blue font-bold text-base">$88.00 (Set of 4)</span>
+              </div>
+              <h3 class="card-heading text-gray-900 dark:text-white">Facet-Cut Crystal Coupes</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Vintage-inspired 7oz coupe glasses with ultra-thin rims designed to enhance foam and aromatics in classic cocktails.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Clear Ice Sphere Maker" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Ice Molds</span>
+                <span class="text-brand-blue font-bold text-base">$75.00</span>
+              </div>
+              <h3 class="card-heading text-gray-900 dark:text-white">Directional Ice Sphere Press</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Insulated directional freezing mold that yields crystal-clear 2.5-inch ice spheres for slow dilution whiskey enjoyment.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
+              <img src="assets/images/program_advanced_training.png" alt="Bar Spoon & Jigger Set" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Precision Tools</span>
+                <span class="text-brand-blue font-bold text-base">$55.00</span>
+              </div>
+              <h3 class="card-heading text-gray-900 dark:text-white">Japanese Jigger & Spoon Duo</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Multi-stage double jigger (1oz/2oz) paired with a 40cm spiral teardrop bar spoon in brushed gunmetal finish.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Smoked Glass Wine Aerator Decanter" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Decanters</span>
+                <span class="text-brand-blue font-bold text-base">$160.00</span>
+              </div>
+              <h3 class="card-heading text-gray-900 dark:text-white">Smoked Quartz Wine & Spirits Carafe</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Hand-blown smoked quartz glass carafe featuring a brass aeration funnel for spirits breathability.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2: CRAFTSMANSHIP & GUARANTEE SECTION -->
+  <section class="py-24 bg-slate-50 dark:bg-charcoal-800 border-t border-gray-100 dark:border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 space-y-3">
+        <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Uncompromising Standards</span>
+        <h2 class="section-heading text-gray-900 dark:text-white max-w-heading mx-auto">Quality Assurance & Guarantee</h2>
+        <p class="body-text text-gray-600 dark:text-gray-400 max-w-paragraph mx-auto">
+          Every piece in our barware catalog undergoes rigorous stress testing, lead-free certification, and precision measurement calibration.
+        </p>
+      </div>
+
+      <!-- Feature Blocks -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3 class="card-heading text-gray-900 dark:text-white">100% Lead-Free Crystal</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+            Formulated with titanium and barium oxide for exceptional clarity, refractive brilliance, and dishwasher durability without toxic lead content.
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3 class="card-heading text-gray-900 dark:text-white">Ergonomic Weight Distribution</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+            Our shakers and bar spoons are weighted to exact gram standards, ensuring balance and minimizing hand fatigue during rapid cocktail preparation.
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="card-heading text-gray-900 dark:text-white">Lifetime Clarity Warranty</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+            We guarantee our glassware against clouding, discoloration, or manufacturing defects under normal care and washing conditions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: NEW EXTRA SECTION - MATERIALS & FINISH GUIDE -->
+  <section class="py-24 bg-white dark:bg-charcoal-900 border-t border-gray-100 dark:border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-3">
+        <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block font-sans">Engineering Excellence</span>
+        <h2 class="section-heading text-gray-900 dark:text-white max-w-heading mx-auto">Materials & Finish Guide</h2>
+        <p class="body-text text-gray-600 dark:text-gray-400 max-w-paragraph mx-auto">
+          Understand the food-grade metallurgy and vacuum PVD coating processes behind our long-lasting barware tools.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold">
+            01
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg">18/8 Food-Grade Stainless Steel</h3>
+          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+            Corrosion-resistant steel alloy engineered to withstand acidic citrus juices, heavy shaking forces, and commercial dishwashing cycles.
+          </p>
+        </div>
+
+        <div class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold">
+            02
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg">Physical Vapor Deposition (PVD)</h3>
+          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+            Titanium oxide vacuum coating creates scratch-proof gold, rose, and gunmetal finishes that won't chip, peel, or leach into liquids.
+          </p>
+        </div>
+
+        <div class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold">
+            03
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg">Precision Diamond Laser Etching</h3>
+          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+            Sub-millimeter laser calibration lines inside our jiggers ensure exact liquid measurement tolerances for balanced flavor ratios.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-50 dark:bg-[#0a0a0a] border-t border-gray-200 dark:border-white/10 py-16 text-gray-700 dark:text-gray-300 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+        <div class="space-y-4">
+          <a href="index.html"
+            class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-xl md:text-2xl font-bold group">
+            <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
+            <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+          </a>
+          <p class="text-xs leading-relaxed text-gray-700 dark:text-gray-300">
+            Your premier source for sleek home bar essentials, hand-blown lead-free crystal glassware, precision cocktail tools, decanters, and luxury gifting.
+          </p>
+          <div class="flex space-x-4 gap-1.5 pt-2">
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i
+                class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-brand-blue transition-colors">Home 1</a></li>
+            <li><a href="home2.html" class="hover:text-brand-blue transition-colors">Home 2</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Products by Category</a></li>
+            <li><a href="recipes.html" class="hover:text-brand-blue transition-colors">Cocktail Recipes</a></li>
+            <li><a href="gifting.html" class="hover:text-brand-blue transition-colors">Curated Gift Sets</a></li>
+            <li><a href="contact.html" class="hover:text-brand-blue transition-colors">Contact Us</a></li>
+            <li><a href="enquire.html" class="hover:text-brand-blue transition-colors">Product Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Categories</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Crystal Glassware</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Bar Tools & Shakers</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Spirits Accessories</a></li>
+            <li><a href="products.html" class="hover:text-brand-blue transition-colors">Decanters & Carafes</a></li>
+            <li><a href="gifting.html" class="hover:text-brand-blue transition-colors">Corporate Engraving</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Mixology Club</h4>
+          <p class="text-xs text-gray-700 dark:text-gray-300">Subscribe for seasonal cocktail recipes, barware care guides, and VIP new release access.</p>
+          <form id="newsletter-form" class="space-y-2">
+            <div class="relative">
+              <input type="email" placeholder="Email Address" required
+                class="w-full bg-white dark:bg-charcoal-800 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-full ltr:pl-4 ltr:pr-20 rtl:pr-4 rtl:pl-20 py-2 text-xs focus:outline-none focus:border-brand-blue">
+              <button type="submit"
+                class="absolute ltr:right-1.5 rtl:left-1.5 top-1.5 bg-brand-blue hover:bg-brand-blue-hover text-black px-3 py-1 rounded-full text-xs font-bold">Join</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-200 dark:border-white/5 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-600 dark:text-gray-400 gap-4">
+        <p>&copy; 2026 Aura Barware. All rights reserved. Premium Home Bar & Cocktail Accessories Store.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-gray-900 dark:hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-900 dark:hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-gray-900 dark:hover:text-white">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
