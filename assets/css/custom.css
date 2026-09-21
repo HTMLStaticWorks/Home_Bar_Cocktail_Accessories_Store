@@ -137,22 +137,22 @@ h6 {
 p {
   font-family: var(--font-sans);
   font-weight: 410;
-  font-size: clamp(0.875rem, 1.5vw, 1.05rem);
-  line-height: 1.6;
+  font-size: 1.05rem !important;
+  line-height: 1.65;
 }
 
 .body-text {
   font-family: var(--font-sans);
   font-weight: 410 !important;
-  font-size: clamp(0.875rem, 1.5vw, 1.05rem) !important;
-  line-height: 1.6;
+  font-size: 1.05rem !important;
+  line-height: 1.65;
 }
 
 /* Helper styles for rest of spec */
 .subheading-text,
 .lead-text {
   font-weight: 480 !important;
-  font-size: clamp(1rem, 2vw, 1.25rem) !important;
+  font-size: 1.15rem !important;
 }
 
 button,
@@ -164,11 +164,30 @@ a.bg-transparent {
 
 .button-text {
   font-weight: 510 !important;
-  font-size: clamp(0.85rem, 1.5vw, 1rem) !important;
+  font-size: 1rem !important;
 }
 
 label {
-  font-weight: 480;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.05em;
+}
+
+input,
+select,
+textarea {
+  font-size: 0.95rem !important;
+}
+
+.text-xs {
+  font-size: 0.925rem !important;
+  line-height: 1.6 !important;
+}
+
+.text-\[10px\],
+.text-\[11px\],
+.text-\[12px\] {
+  font-size: 0.875rem !important;
 }
 
 .nav-link {
@@ -182,7 +201,7 @@ caption {
 .caption-text,
 .small-text {
   font-weight: 400 !important;
-  font-size: clamp(0.75rem, 1.2vw, 0.9rem) !important;
+  font-size: 0.925rem !important;
 }
 
 strong,
@@ -276,51 +295,85 @@ html.dark #back-to-top {
   transform: translateY(-4px) scale(1.05) !important;
 }
 
-/* Viewport-specific inner hero adjustments */
+/* Viewport-specific inner hero adjustments for 1024px, 1280px & 1440px+ */
 @media (min-width: 1024px) {
   .inner-hero {
-    min-height: 38vh !important;
-    padding-top: 7.5rem !important;
-    padding-bottom: 3.5rem !important;
+    min-height: 52vh !important;
+    padding-top: 9rem !important;
+    padding-bottom: 5rem !important;
   }
 }
 
-/* Header navigation spacing fix for LTR & RTL at 1024px+ */
-@media (min-width: 1024px) {
-  header nav {
-    display: flex !important;
-    gap: 0.65rem !important;
+@media (min-width: 1280px) {
+  .inner-hero {
+    min-height: 62vh !important;
+    padding-top: 11rem !important;
+    padding-bottom: 7rem !important;
   }
 }
 
-/* Header alignment & 1024px responsive layout fixes */
-#main-header .flex.items-center.justify-between {
-  gap: 0.5rem;
+@media (min-width: 1400px) {
+  .inner-hero {
+    min-height: 70vh !important;
+    padding-top: 12.5rem !important;
+    padding-bottom: 8.5rem !important;
+  }
 }
 
-#main-header a[href="index.html"] {
-  flex-shrink: 0 !important;
-  white-space: nowrap !important;
-}
-
-#main-header a[href="index.html"] span {
-  white-space: nowrap !important;
-}
-
+/* Header navigation spacing & typography for desktop (1024px, 1280px, 1440px+) */
 @media (min-width: 1024px) and (max-width: 1279px) {
+  #main-header .max-w-7xl {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
   #main-header nav {
-    gap: 0.75rem !important;
-    margin-left: 0.5rem !important;
-    margin-right: 0.5rem !important;
+    display: flex !important;
+    gap: 0.85rem !important;
+    align-items: center !important;
   }
-  #main-header nav a {
+
+  #main-header nav a.nav-link {
     font-size: 0.75rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
     white-space: nowrap !important;
-    padding-left: 0.2rem !important;
-    padding-right: 0.2rem !important;
   }
-  #main-header a[href="index.html"] {
-    font-size: 1.15rem !important;
+}
+
+@media (min-width: 1024px) {
+  #main-header nav {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  #main-header nav a.nav-link {
+    font-size: 0.875rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  #main-header nav {
+    gap: 2.25rem !important;
+  }
+
+  #main-header nav a.nav-link {
+    font-size: 0.875rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  #main-header nav {
+    gap: 2.75rem !important;
   }
 }
 

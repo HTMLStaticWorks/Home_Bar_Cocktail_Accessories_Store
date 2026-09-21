@@ -7,9 +7,9 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products by Category | Aura Barware</title>
+  <title>Products by Category | Barware</title>
   <meta name="description"
-    content="Explore Aura Barware's luxury catalog including crystal glassware, Japanese precision cocktail tools, decanters, and spirits accessories.">
+    content="Explore Barware's luxury catalog including crystal glassware, Japanese precision cocktail tools, decanters, and spirits accessories.">
 
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -59,48 +59,98 @@
   <!-- NAVBAR -->
   <header id="main-header"
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 bg-white dark:bg-[#0a0a0a]/95 border-b border-gray-200 dark:border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 gap-2">
+    <div class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4 xl:px-8">
+      <div class="flex items-center justify-between h-16 gap-2 lg:gap-3 xl:gap-4">
 
         <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-wider text-base sm:text-lg md:text-xl font-bold shrink-0 whitespace-nowrap">
-          <span class="text-brand-blue">
-            <i class="fas fa-martini-glass-citrus"></i>
-          </span>
-          <span>AURA BARWARE</span>
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 whitespace-nowrap">
+          <svg class="w-8 h-8 sm:w-10 sm:h-10 text-brand-blue group-hover:scale-105 transition-transform duration-300"
+            viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cheersGoldHeaderProg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE79A" />
+                <stop offset="50%" stop-color="#F0B429" />
+                <stop offset="100%" stop-color="#B8893D" />
+              </linearGradient>
+            </defs>
+            <!-- Left Beer Mug -->
+            <g transform="translate(18, 30) rotate(14) translate(-18, -30)">
+              <path d="M11 18C11 15 13 13 16 13C17 11 20 10 23 12C25 10 29 11 29 14C31 14 32 16 31 18H11Z"
+                fill="url(#cheersGoldHeaderProg)" />
+              <path d="M13 19L15 42C15 44.5 17 46 19.5 46H23.5C26 46 28 44.5 28 42L30 19H13Z"
+                stroke="url(#cheersGoldHeaderProg)" stroke-width="2.2" stroke-linejoin="round" />
+              <path d="M13 23H9C7 23 6 24.5 6 26.5V34.5C6 36.5 7 38 9 38H14" stroke="url(#cheersGoldHeaderProg)"
+                stroke-width="2.2" />
+              <path d="M18 24V40M24 24V40" stroke="url(#cheersGoldHeaderProg)" stroke-width="1.2" stroke-linecap="round"
+                opacity="0.75" />
+            </g>
+            <!-- Right Beer Mug -->
+            <g transform="translate(46, 30) rotate(-14) translate(-46, -30)">
+              <path d="M33 18C33 15 35 13 38 13C39 11 42 10 44 12C46 10 50 11 50 14C52 14 53 16 52 18H33Z"
+                fill="url(#cheersGoldHeaderProg)" />
+              <path d="M34 19L36 42C36 44.5 38 46 40.5 46H44.5C47 46 49 44.5 49 42L51 19H34Z"
+                stroke="url(#cheersGoldHeaderProg)" stroke-width="2.2" stroke-linejoin="round" />
+              <path d="M51 23H55C57 23 58 24.5 58 26.5V34.5C58 36.5 57 38 55 38H50" stroke="url(#cheersGoldHeaderProg)"
+                stroke-width="2.2" />
+              <path d="M40 24V40M46 24V40" stroke="url(#cheersGoldHeaderProg)" stroke-width="1.2" stroke-linecap="round"
+                opacity="0.75" />
+            </g>
+            <!-- Cheers Clink Spark Stars -->
+            <path d="M32 6L33.2 10.8L38 12L33.2 13.2L32 18L30.8 13.2L26 12L30.8 10.8L32 6Z"
+              fill="url(#cheersGoldHeaderProg)" />
+            <circle cx="26" cy="7" r="1.5" fill="url(#cheersGoldHeaderProg)" />
+            <circle cx="38" cy="7" r="1.5" fill="url(#cheersGoldHeaderProg)" />
+            <circle cx="32" cy="22" r="1.2" fill="url(#cheersGoldHeaderProg)" />
+          </svg>
+          <div class="flex flex-col">
+            <span
+              class="text-gray-900 dark:text-white font-serif tracking-[0.2em] xl:tracking-[0.25em] text-base sm:text-lg xl:text-xl font-bold uppercase leading-none">BARWARE</span>
+            <span
+              class="text-[8px] xl:text-[9px] tracking-[0.25em] xl:tracking-[0.3em] uppercase text-brand-blue font-semibold mt-1">Luxury
+              Mixology</span>
+          </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-2 xl:gap-6 lg:mx-2 xl:mx-4 shrink">
+        <nav class="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-9 2xl:gap-11 lg:mx-1 xl:mx-8 2xl:mx-12 shrink-0">
           <a href="index.html"
-            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 1</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home
+            1</a>
           <a href="home2.html"
-            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 2</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home
+            2</a>
           <a href="products.html"
-            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-900 dark:text-white hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap border-brand-blue">Products</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-900 dark:text-white hover:text-brand-blue transition-colors py-2 border-b-2 border-brand-blue whitespace-nowrap">Products</a>
           <a href="recipes.html"
-            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Recipes</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Recipes</a>
           <a href="gifting.html"
-            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Gifting</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Gifting</a>
           <a href="contact.html"
-            class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Contact</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Contact</a>
         </nav>
 
         <!-- Right Action Items -->
-        <div class="hidden lg:flex items-center space-x-2 gap-2 shrink-0">
-          <button class="theme-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle Theme">
+        <div class="hidden lg:flex items-center space-x-2 xl:space-x-4 gap-1.5 xl:gap-2 shrink-0">
+          <button
+            class="theme-toggle-btn text-gray-600 dark:text-white focus:outline-none p-1.5 xl:p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+            title="Toggle Theme">
             <i class="theme-toggle-icon fas fa-sun text-yellow-400"></i>
           </button>
-          <button class="rtl-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle RTL/LTR">
+          <button
+            class="rtl-toggle-btn text-gray-600 dark:text-white focus:outline-none p-1.5 xl:p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+            title="Toggle RTL/LTR">
             <i class="fas fa-right-left text-brand-blue"></i>
           </button>
           <div class="h-6 w-px bg-gray-200 dark:bg-gray-700/50"></div>
-          <a href="enquire.html" class="bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold text-xs tracking-widest uppercase px-4 xl:px-5 py-2.5 rounded-full transition-all duration-300 shadow-md whitespace-nowrap">Enquire</a>
+          <a href="enquire.html"
+            class="bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold text-xs tracking-wider xl:tracking-widest uppercase px-3.5 xl:px-5 py-2 xl:py-2.5 rounded-full transition-all duration-300 shadow-md whitespace-nowrap">Enquire</a>
         </div>
 
         <!-- Mobile Menu Button -->
         <div class="lg:hidden flex items-center space-x-2 gap-2">
-          <button id="mobile-menu-btn" class="text-gray-800 dark:text-white hover:text-brand-blue focus:outline-none p-2 rounded-md transition-colors" aria-label="Open Menu">
+          <button id="mobile-menu-btn"
+            class="text-gray-800 dark:text-white hover:text-brand-blue focus:outline-none p-2 rounded-md transition-colors"
+            aria-label="Open Menu">
             <i class="fas fa-bars text-2xl"></i>
           </button>
         </div>
@@ -110,42 +160,87 @@
   </header>
 
   <!-- Mobile Drawer Menu -->
-  <div id="mobile-menu" class="fixed inset-y-0 right-0 z-[100] w-full max-w-xs bg-white/95 dark:bg-charcoal-900/95 backdrop-blur-md shadow-2xl p-6 border-l border-gray-200 dark:border-white/10 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between">
+  <div id="mobile-menu"
+    class="fixed inset-y-0 right-0 z-[100] w-full max-w-xs bg-white/95 dark:bg-charcoal-900/95 backdrop-blur-md shadow-2xl p-6 border-l border-gray-200 dark:border-white/10 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between">
     <div>
       <div class="flex items-center justify-between mb-8">
-        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-lg font-bold group">
-          <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
-          <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+        <a href="index.html" class="flex items-center gap-2.5 group">
+          <svg class="w-7 h-7 text-brand-blue" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cheersGoldMobProg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE79A" />
+                <stop offset="50%" stop-color="#F0B429" />
+                <stop offset="100%" stop-color="#B8893D" />
+              </linearGradient>
+            </defs>
+            <g transform="translate(18, 30) rotate(14) translate(-18, -30)">
+              <path d="M11 18C11 15 13 13 16 13C17 11 20 10 23 12C25 10 29 11 29 14C31 14 32 16 31 18H11Z"
+                fill="url(#cheersGoldMobProg)" />
+              <path d="M13 19L15 42C15 44.5 17 46 19.5 46H23.5C26 46 28 44.5 28 42L30 19H13Z"
+                stroke="url(#cheersGoldMobProg)" stroke-width="2.2" stroke-linejoin="round" />
+              <path d="M13 23H9C7 23 6 24.5 6 26.5V34.5C6 36.5 7 38 9 38H14" stroke="url(#cheersGoldMobProg)"
+                stroke-width="2.2" />
+            </g>
+            <g transform="translate(46, 30) rotate(-14) translate(-46, -30)">
+              <path d="M33 18C33 15 35 13 38 13C39 11 42 10 44 12C46 10 50 11 50 14C52 14 53 16 52 18H33Z"
+                fill="url(#cheersGoldMobProg)" />
+              <path d="M34 19L36 42C36 44.5 38 46 40.5 46H44.5C47 46 49 44.5 49 42L51 19H34Z"
+                stroke="url(#cheersGoldMobProg)" stroke-width="2.2" stroke-linejoin="round" />
+              <path d="M51 23H55C57 23 58 24.5 58 26.5V34.5C58 36.5 57 38 55 38H50" stroke="url(#cheersGoldMobProg)"
+                stroke-width="2.2" />
+            </g>
+            <path d="M32 6L33.2 10.8L38 12L33.2 13.2L32 18L30.8 13.2L26 12L30.8 10.8L32 6Z"
+              fill="url(#cheersGoldMobProg)" />
+          </svg>
+          <div class="flex flex-col">
+            <span
+              class="text-gray-900 dark:text-white font-serif tracking-[0.25em] text-base font-bold uppercase leading-none">BARWARE</span>
+            <span class="text-[8px] tracking-[0.25em] uppercase text-brand-blue font-semibold mt-0.5">Luxury
+              Mixology</span>
+          </div>
         </a>
-        <button id="mobile-menu-close-btn" class="text-gray-800 dark:text-white hover:text-brand-blue p-2 focus:outline-none" aria-label="Close Menu">
+        <button id="mobile-menu-close-btn"
+          class="text-gray-800 dark:text-white hover:text-brand-blue p-2 focus:outline-none" aria-label="Close Menu">
           <i class="fas fa-times text-2xl"></i>
         </button>
       </div>
 
       <nav class="flex flex-col space-y-4">
-        <a href="index.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Home 1</a>
-        <a href="home2.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Home 2</a>
-        <a href="products.html" class="nav-link text-base font-semibold text-brand-blue transition-colors py-1 border-b border-white/5">Products</a>
-        <a href="recipes.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Recipes</a>
-        <a href="gifting.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Gifting</a>
-        <a href="contact.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Contact</a>
-        <a href="enquire.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Enquire</a>
+        <a href="index.html"
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Home
+          1</a>
+        <a href="home2.html"
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Home
+          2</a>
+        <a href="products.html"
+          class="nav-link text-base font-semibold text-brand-blue transition-colors py-1 border-b border-white/5">Products</a>
+        <a href="recipes.html"
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Recipes</a>
+        <a href="gifting.html"
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Gifting</a>
+        <a href="contact.html"
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Contact</a>
       </nav>
     </div>
 
     <div class="mt-8 pt-6 border-t border-gray-200 dark:border-white/10 flex flex-col space-y-4">
-      <div class="flex items-center justify-around py-2 bg-gray-100 dark:bg-black/25 rounded-xl border border-gray-200 dark:border-white/5">
-        <button class="theme-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
+      <div
+        class="flex items-center justify-around py-2 bg-gray-100 dark:bg-black/25 rounded-xl border border-gray-200 dark:border-white/5">
+        <button
+          class="theme-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
           <i class="theme-toggle-icon fas fa-sun text-yellow-500"></i>
           <span>Theme</span>
         </button>
         <div class="h-6 w-px bg-gray-300 dark:bg-white/10"></div>
-        <button class="rtl-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
+        <button
+          class="rtl-toggle-btn text-gray-700 dark:text-gray-300 hover:text-brand-blue focus:outline-none p-2 rounded-full transition-colors flex items-center gap-2 text-sm font-semibold">
           <i class="fas fa-right-left text-brand-blue"></i>
           <span>RTL</span>
         </button>
       </div>
-      <a href="enquire.html" class="block text-center py-2.5 bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold rounded-full shadow-lg transition-all">Enquire Now</a>
+      <a href="enquire.html"
+        class="block text-center py-2.5 bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold rounded-full shadow-lg transition-all">Enquire
+        Now</a>
     </div>
   </div>
 
@@ -158,7 +253,8 @@
       <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Artisanal Craftsmanship</span>
       <h1 class="hero-heading text-white max-w-heading mx-auto">Barware Products & Collections</h1>
       <p class="body-text text-gray-300 max-w-paragraph mx-auto">
-        Handcrafted crystal glassware, Japanese precision mixing tools, and luxury spirits accessories designed for the modern mixologist.
+        Handcrafted crystal glassware, Japanese precision mixing tools, and luxury spirits accessories designed for the
+        modern mixologist.
       </p>
     </div>
   </section>
@@ -166,7 +262,7 @@
   <!-- PRODUCTS CATALOG GRID SECTION -->
   <section class="py-24 bg-white dark:bg-charcoal-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <!-- Section Header -->
       <div class="text-center mb-16 space-y-3">
         <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Curated Essentials</span>
@@ -178,145 +274,182 @@
 
       <!-- Filter Buttons -->
       <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
-        <button class="bg-brand-blue text-black font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full shadow-sm">All Products</button>
-        <button class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Crystal Glassware</button>
-        <button class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Shakers & Strainers</button>
-        <button class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Decanters & Ice</button>
+        <button
+          class="bg-brand-blue text-black font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full shadow-sm">All
+          Products</button>
+        <button
+          class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Crystal
+          Glassware</button>
+        <button
+          class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Shakers
+          & Strainers</button>
+        <button
+          class="bg-slate-100 dark:bg-charcoal-800 text-gray-700 dark:text-gray-300 hover:text-brand-blue font-bold text-xs uppercase tracking-widest px-6 py-2.5 rounded-full border border-gray-200 dark:border-white/5 transition-colors">Decanters
+          & Ice</button>
       </div>
 
       <!-- Products Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- Product 1 -->
-        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
-              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Hand-Blown Crystal Whiskey Decanter" class="w-full h-full object-cover">
-              <span class="absolute top-4 ltr:right-4 rtl:left-4 bg-brand-blue text-black font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">Bestseller</span>
+        <div
+          class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50 shrink-0">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80"
+                alt="Hand-Blown Crystal Whiskey Decanter" class="w-full h-full object-cover">
+              <span
+                class="absolute top-4 ltr:right-4 rtl:left-4 bg-brand-blue text-black font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">Bestseller</span>
             </div>
-            <div class="p-6 space-y-3">
-              <div class="flex items-center justify-between">
+            <div class="p-6 space-y-3 flex flex-col flex-1">
+              <div class="flex items-center justify-between shrink-0 min-h-[1.5rem]">
                 <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Decanters</span>
                 <span class="text-brand-blue font-bold text-base">$145.00</span>
               </div>
-              <h3 class="card-heading text-gray-900 dark:text-white">Crystal Monogram Decanter</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
-                Heavyweight 750ml hand-blown lead-free crystal decanter with ground glass stopper and custom monogram engraving.
+              <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Crystal Monogram Decanter</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] flex-1">
+                Heavyweight 750ml hand-blown lead-free crystal decanter with ground glass stopper and custom monogram
+                engraving.
               </p>
             </div>
           </div>
-          <div class="p-6 pt-0">
-            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          <div class="p-6 pt-0 mt-auto shrink-0">
+            <a href="enquire.html"
+              class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire
+              Now</a>
           </div>
         </div>
 
         <!-- Product 2 -->
-        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
-              <img src="assets/images/program_beginner_classes.png" alt="Japanese Gold Cocktail Shaker Kit" class="w-full h-full object-cover">
+        <div
+          class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50 shrink-0">
+              <img src="assets/images/program_beginner_classes.png" alt="Japanese Gold Cocktail Shaker Kit"
+                class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <div class="flex items-center justify-between">
+            <div class="p-6 space-y-3 flex flex-col flex-1">
+              <div class="flex items-center justify-between shrink-0 min-h-[1.5rem]">
                 <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Bar Tools</span>
                 <span class="text-brand-blue font-bold text-base">$120.00</span>
               </div>
-              <h3 class="card-heading text-gray-900 dark:text-white">Japanese Gold Shaker Set</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
+              <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Japanese Gold Shaker Set</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] flex-1">
                 Precision-balanced 18/8 stainless steel 28oz & 18oz Boston shaker pair with titanium gold PVD plating.
               </p>
             </div>
           </div>
-          <div class="p-6 pt-0">
-            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          <div class="p-6 pt-0 mt-auto shrink-0">
+            <a href="enquire.html"
+              class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire
+              Now</a>
           </div>
         </div>
 
         <!-- Product 3 -->
-        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
-              <img src="assets/images/fencing_session.png" alt="Facet Cut Coupe Glasses" class="w-full h-full object-cover">
+        <div
+          class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50 shrink-0">
+              <img src="assets/images/fencing_session.png" alt="Facet Cut Coupe Glasses"
+                class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <div class="flex items-center justify-between">
+            <div class="p-6 space-y-3 flex flex-col flex-1">
+              <div class="flex items-center justify-between shrink-0 min-h-[1.5rem]">
                 <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Glassware</span>
                 <span class="text-brand-blue font-bold text-base">$88.00 (Set of 4)</span>
               </div>
-              <h3 class="card-heading text-gray-900 dark:text-white">Facet-Cut Crystal Coupes</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
-                Vintage-inspired 7oz coupe glasses with ultra-thin rims designed to enhance foam and aromatics in classic cocktails.
+              <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Facet-Cut Crystal Coupes</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] flex-1">
+                Vintage-inspired 7oz coupe glasses with ultra-thin rims designed to enhance foam and aromatics in
+                classic cocktails.
               </p>
             </div>
           </div>
-          <div class="p-6 pt-0">
-            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          <div class="p-6 pt-0 mt-auto shrink-0">
+            <a href="enquire.html"
+              class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire
+              Now</a>
           </div>
         </div>
 
         <!-- Product 4 -->
-        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
-              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Clear Ice Sphere Maker" class="w-full h-full object-cover">
+        <div
+          class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50 shrink-0">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80"
+                alt="Clear Ice Sphere Maker" class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <div class="flex items-center justify-between">
+            <div class="p-6 space-y-3 flex flex-col flex-1">
+              <div class="flex items-center justify-between shrink-0 min-h-[1.5rem]">
                 <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Ice Molds</span>
                 <span class="text-brand-blue font-bold text-base">$75.00</span>
               </div>
-              <h3 class="card-heading text-gray-900 dark:text-white">Directional Ice Sphere Press</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
-                Insulated directional freezing mold that yields crystal-clear 2.5-inch ice spheres for slow dilution whiskey enjoyment.
+              <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Directional Ice Sphere Press</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] flex-1">
+                Insulated directional freezing mold that yields crystal-clear 2.5-inch ice spheres for slow dilution
+                whiskey enjoyment.
               </p>
             </div>
           </div>
-          <div class="p-6 pt-0">
-            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          <div class="p-6 pt-0 mt-auto shrink-0">
+            <a href="enquire.html"
+              class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire
+              Now</a>
           </div>
         </div>
 
         <!-- Product 5 -->
-        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
-              <img src="assets/images/program_advanced_training.png" alt="Bar Spoon & Jigger Set" class="w-full h-full object-cover">
+        <div
+          class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50 shrink-0">
+              <img src="assets/images/program_advanced_training.png" alt="Bar Spoon & Jigger Set"
+                class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <div class="flex items-center justify-between">
+            <div class="p-6 space-y-3 flex flex-col flex-1">
+              <div class="flex items-center justify-between shrink-0 min-h-[1.5rem]">
                 <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Precision Tools</span>
                 <span class="text-brand-blue font-bold text-base">$55.00</span>
               </div>
-              <h3 class="card-heading text-gray-900 dark:text-white">Japanese Jigger & Spoon Duo</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
-                Multi-stage double jigger (1oz/2oz) paired with a 40cm spiral teardrop bar spoon in brushed gunmetal finish.
+              <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Japanese Jigger & Spoon Duo</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] flex-1">
+                Multi-stage double jigger (1oz/2oz) paired with a 40cm spiral teardrop bar spoon in brushed gunmetal
+                finish.
               </p>
             </div>
           </div>
-          <div class="p-6 pt-0">
-            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          <div class="p-6 pt-0 mt-auto shrink-0">
+            <a href="enquire.html"
+              class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire
+              Now</a>
           </div>
         </div>
 
         <!-- Product 6 -->
-        <div class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-64 overflow-hidden bg-charcoal-900/50">
-              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Smoked Glass Wine Aerator Decanter" class="w-full h-full object-cover">
+        <div
+          class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-64 overflow-hidden bg-charcoal-900/50 shrink-0">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
+                alt="Smoked Glass Wine Aerator Decanter" class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <div class="flex items-center justify-between">
+            <div class="p-6 space-y-3 flex flex-col flex-1">
+              <div class="flex items-center justify-between shrink-0 min-h-[1.5rem]">
                 <span class="text-xs text-brand-blue font-semibold uppercase tracking-wider">Decanters</span>
                 <span class="text-brand-blue font-bold text-base">$160.00</span>
               </div>
-              <h3 class="card-heading text-gray-900 dark:text-white">Smoked Quartz Wine & Spirits Carafe</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
+              <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Smoked Quartz Wine & Spirits Carafe</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] flex-1">
                 Hand-blown smoked quartz glass carafe featuring a brass aeration funnel for spirits breathability.
               </p>
             </div>
           </div>
-          <div class="p-6 pt-0">
-            <a href="enquire.html" class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire Now</a>
+          <div class="p-6 pt-0 mt-auto shrink-0">
+            <a href="enquire.html"
+              class="block text-center py-2.5 text-xs font-bold uppercase tracking-widest text-[#121212] bg-brand-blue hover:bg-brand-blue-hover rounded-lg transition-colors">Enquire
+              Now</a>
           </div>
         </div>
 
@@ -328,46 +461,58 @@
   <!-- SECTION 2: CRAFTSMANSHIP & GUARANTEE SECTION -->
   <section class="py-24 bg-slate-50 dark:bg-charcoal-800 border-t border-gray-100 dark:border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <!-- Section Header -->
       <div class="text-center mb-16 space-y-3">
-        <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Uncompromising Standards</span>
-        <h2 class="section-heading text-gray-900 dark:text-white max-w-heading mx-auto">Quality Assurance & Guarantee</h2>
+        <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block">Uncompromising
+          Standards</span>
+        <h2 class="section-heading text-gray-900 dark:text-white max-w-heading mx-auto">Quality Assurance & Guarantee
+        </h2>
         <p class="body-text text-gray-600 dark:text-gray-400 max-w-paragraph mx-auto">
-          Every piece in our barware catalog undergoes rigorous stress testing, lead-free certification, and precision measurement calibration.
+          Every piece in our barware catalog undergoes rigorous stress testing, lead-free certification, and precision
+          measurement calibration.
         </p>
       </div>
 
       <!-- Feature Blocks -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <div class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold">
+
+        <div
+          class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm flex flex-col h-full">
+          <div
+            class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold shrink-0">
             <i class="fas fa-gem"></i>
           </div>
-          <h3 class="card-heading text-gray-900 dark:text-white">100% Lead-Free Crystal</h3>
-          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-            Formulated with titanium and barium oxide for exceptional clarity, refractive brilliance, and dishwasher durability without toxic lead content.
+          <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">100% Lead-Free Crystal</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed min-h-[3.5rem] flex-1">
+            Formulated with titanium and barium oxide for exceptional clarity, refractive brilliance, and dishwasher
+            durability without toxic lead content.
           </p>
         </div>
 
-        <div class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold">
+        <div
+          class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm flex flex-col h-full">
+          <div
+            class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold shrink-0">
             <i class="fas fa-balance-scale"></i>
           </div>
-          <h3 class="card-heading text-gray-900 dark:text-white">Ergonomic Weight Distribution</h3>
-          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-            Our shakers and bar spoons are weighted to exact gram standards, ensuring balance and minimizing hand fatigue during rapid cocktail preparation.
+          <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Ergonomic Weight Distribution</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed min-h-[3.5rem] flex-1">
+            Our shakers and bar spoons are weighted to exact gram standards, ensuring balance and minimizing hand
+            fatigue during rapid cocktail preparation.
           </p>
         </div>
 
-        <div class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold">
+        <div
+          class="bg-white dark:bg-charcoal-900 p-8 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 shadow-sm flex flex-col h-full">
+          <div
+            class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl font-bold shrink-0">
             <i class="fas fa-shield-alt"></i>
           </div>
-          <h3 class="card-heading text-gray-900 dark:text-white">Lifetime Clarity Warranty</h3>
-          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-            We guarantee our glassware against clouding, discoloration, or manufacturing defects under normal care and washing conditions.
+          <h3 class="card-heading text-gray-900 dark:text-white flex items-center min-h-[2.5rem]">Lifetime Clarity Warranty</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed min-h-[3.5rem] flex-1">
+            We guarantee our glassware against clouding, discoloration, or manufacturing defects under normal care and
+            washing conditions.
           </p>
         </div>
 
@@ -379,9 +524,10 @@
   <!-- SECTION 3: NEW EXTRA SECTION - MATERIALS & FINISH GUIDE -->
   <section class="py-24 bg-white dark:bg-charcoal-900 border-t border-gray-100 dark:border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="text-center mb-16 space-y-3">
-        <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block font-sans">Engineering Excellence</span>
+        <span class="text-brand-blue font-semibold text-xs uppercase tracking-widest block font-sans">Engineering
+          Excellence</span>
         <h2 class="section-heading text-gray-900 dark:text-white max-w-heading mx-auto">Materials & Finish Guide</h2>
         <p class="body-text text-gray-600 dark:text-gray-400 max-w-paragraph mx-auto">
           Understand the food-grade metallurgy and vacuum PVD coating processes behind our long-lasting barware tools.
@@ -389,34 +535,43 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <div class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4">
-          <div class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold">
+
+        <div
+          class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold shrink-0">
             01
           </div>
-          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg">18/8 Food-Grade Stainless Steel</h3>
-          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-            Corrosion-resistant steel alloy engineered to withstand acidic citrus juices, heavy shaking forces, and commercial dishwashing cycles.
+          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg flex items-center min-h-[2.5rem]">18/8 Food-Grade Stainless Steel</h3>
+          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed min-h-[3.5rem] flex-1">
+            Corrosion-resistant steel alloy engineered to withstand acidic citrus juices, heavy shaking forces, and
+            commercial dishwashing cycles.
           </p>
         </div>
 
-        <div class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4">
-          <div class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold">
+        <div
+          class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold shrink-0">
             02
           </div>
-          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg">Physical Vapor Deposition (PVD)</h3>
-          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-            Titanium oxide vacuum coating creates scratch-proof gold, rose, and gunmetal finishes that won't chip, peel, or leach into liquids.
+          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg flex items-center min-h-[2.5rem]">Physical Vapor Deposition (PVD)</h3>
+          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed min-h-[3.5rem] flex-1">
+            Titanium oxide vacuum coating creates scratch-proof gold, rose, and gunmetal finishes that won't chip, peel,
+            or leach into liquids.
           </p>
         </div>
 
-        <div class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4">
-          <div class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold">
+        <div
+          class="p-8 bg-slate-50 dark:bg-charcoal-800 rounded-2xl border border-gray-200 dark:border-white/5 space-y-4 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue text-lg font-bold shrink-0">
             03
           </div>
-          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg">Precision Diamond Laser Etching</h3>
-          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-            Sub-millimeter laser calibration lines inside our jiggers ensure exact liquid measurement tolerances for balanced flavor ratios.
+          <h3 class="font-bold text-gray-900 dark:text-white font-serif text-lg flex items-center min-h-[2.5rem]">Precision Diamond Laser Etching</h3>
+          <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed min-h-[3.5rem] flex-1">
+            Sub-millimeter laser calibration lines inside our jiggers ensure exact liquid measurement tolerances for
+            balanced flavor ratios.
           </p>
         </div>
 
@@ -426,18 +581,54 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-50 dark:bg-[#0a0a0a] border-t border-gray-200 dark:border-white/10 py-16 text-gray-700 dark:text-gray-300 text-sm">
+  <footer
+    class="bg-slate-50 dark:bg-[#0a0a0a] border-t border-gray-200 dark:border-white/10 py-16 text-gray-700 dark:text-gray-300 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
         <div class="space-y-4">
-          <a href="index.html"
-            class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-xl md:text-2xl font-bold group">
-            <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
-            <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+          <a href="index.html" class="flex items-center gap-3 group">
+            <svg class="w-9 h-9 text-brand-blue group-hover:scale-105 transition-transform duration-300"
+              viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cheersGoldFootProg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFE79A" />
+                  <stop offset="50%" stop-color="#F0B429" />
+                  <stop offset="100%" stop-color="#B8893D" />
+                </linearGradient>
+              </defs>
+              <!-- Left Beer Mug -->
+              <g transform="translate(18, 30) rotate(14) translate(-18, -30)">
+                <path d="M11 18C11 15 13 13 16 13C17 11 20 10 23 12C25 10 29 11 29 14C31 14 32 16 31 18H11Z"
+                  fill="url(#cheersGoldFootProg)" />
+                <path d="M13 19L15 42C15 44.5 17 46 19.5 46H23.5C26 46 28 44.5 28 42L30 19H13Z"
+                  stroke="url(#cheersGoldFootProg)" stroke-width="2.2" stroke-linejoin="round" />
+                <path d="M13 23H9C7 23 6 24.5 6 26.5V34.5C6 36.5 7 38 9 38H14" stroke="url(#cheersGoldFootProg)"
+                  stroke-width="2.2" />
+              </g>
+              <!-- Right Beer Mug -->
+              <g transform="translate(46, 30) rotate(-14) translate(-46, -30)">
+                <path d="M33 18C33 15 35 13 38 13C39 11 42 10 44 12C46 10 50 11 50 14C52 14 53 16 52 18H33Z"
+                  fill="url(#cheersGoldFootProg)" />
+                <path d="M34 19L36 42C36 44.5 38 46 40.5 46H44.5C47 46 49 44.5 49 42L51 19H34Z"
+                  stroke="url(#cheersGoldFootProg)" stroke-width="2.2" stroke-linejoin="round" />
+                <path d="M51 23H55C57 23 58 24.5 58 26.5V34.5C58 36.5 57 38 55 38H50" stroke="url(#cheersGoldFootProg)"
+                  stroke-width="2.2" />
+              </g>
+              <!-- Cheers Clink Spark Stars -->
+              <path d="M32 6L33.2 10.8L38 12L33.2 13.2L32 18L30.8 13.2L26 12L30.8 10.8L32 6Z"
+                fill="url(#cheersGoldFootProg)" />
+            </svg>
+            <div class="flex flex-col">
+              <span
+                class="text-gray-900 dark:text-white font-serif tracking-[0.25em] text-xl font-bold uppercase leading-none">BARWARE</span>
+              <span class="text-[9px] tracking-[0.3em] uppercase text-brand-blue font-semibold mt-1">Luxury
+                Mixology</span>
+            </div>
           </a>
           <p class="text-xs leading-relaxed text-gray-700 dark:text-gray-300">
-            Your premier source for sleek home bar essentials, hand-blown lead-free crystal glassware, precision cocktail tools, decanters, and luxury gifting.
+            Your premier source for sleek home bar essentials, hand-blown lead-free crystal glassware, precision
+            cocktail tools, decanters, and luxury gifting.
           </p>
           <div class="flex space-x-4 gap-1.5 pt-2">
             <a href="#" class="text-gray-400 hover:text-brand-blue text-lg transition-colors"><i
@@ -452,7 +643,8 @@
         </div>
 
         <div class="space-y-4">
-          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Quick Links</h4>
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Quick
+            Links</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="index.html" class="hover:text-brand-blue transition-colors">Home 1</a></li>
             <li><a href="home2.html" class="hover:text-brand-blue transition-colors">Home 2</a></li>
@@ -465,7 +657,8 @@
         </div>
 
         <div class="space-y-4">
-          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Categories</h4>
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Categories
+          </h4>
           <ul class="space-y-2 text-xs">
             <li><a href="products.html" class="hover:text-brand-blue transition-colors">Crystal Glassware</a></li>
             <li><a href="products.html" class="hover:text-brand-blue transition-colors">Bar Tools & Shakers</a></li>
@@ -476,8 +669,10 @@
         </div>
 
         <div class="space-y-4">
-          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Mixology Club</h4>
-          <p class="text-xs text-gray-700 dark:text-gray-300">Subscribe for seasonal cocktail recipes, barware care guides, and VIP new release access.</p>
+          <h4 class="text-gray-900 dark:text-white font-serif font-semibold uppercase tracking-wider text-xs">Mixology
+            Club</h4>
+          <p class="text-xs text-gray-700 dark:text-gray-300">Subscribe for seasonal cocktail recipes, barware care
+            guides, and VIP new release access.</p>
           <form id="newsletter-form" class="space-y-2">
             <div class="relative">
               <input type="email" placeholder="Email Address" required
@@ -490,8 +685,9 @@
 
       </div>
 
-      <div class="border-t border-gray-200 dark:border-white/5 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-600 dark:text-gray-400 gap-4">
-        <p>&copy; 2026 Aura Barware. All rights reserved. Premium Home Bar & Cocktail Accessories Store.</p>
+      <div
+        class="border-t border-gray-200 dark:border-white/5 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-600 dark:text-gray-400 gap-4">
+        <p>&copy; 2026 Barware. All rights reserved. Premium Home Bar & Cocktail Accessories Store.</p>
         <div class="flex items-center gap-6">
           <a href="#" class="hover:text-gray-900 dark:hover:text-white">Privacy Policy</a>
           <a href="#" class="hover:text-gray-900 dark:hover:text-white">Terms of Service</a>

@@ -6,8 +6,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cocktail Recipes & Mixology Guides | Aura Barware</title>
-  <meta name="description" content="Discover artisanal cocktail recipes, spirit pairing guides, and clear ice carving techniques curated by Aura Barware's master mixologists.">
+  <title>Master Mixologists & Artisans | Barware</title>
+  <meta name="description" content="Meet the master mixologists, spirits sommeliers, and tool engineers behind Barware's luxury collections.">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -55,37 +55,65 @@
 
   <!-- NAVBAR -->
   <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 bg-white dark:bg-[#0a0a0a]/95 border-b border-gray-200 dark:border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 gap-2">
+    <div class="max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4 xl:px-8">
+      <div class="flex items-center justify-between h-16 gap-2 lg:gap-3 xl:gap-4">
         
         <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-wider text-base sm:text-lg md:text-xl font-bold shrink-0 whitespace-nowrap">
-          <span class="text-brand-blue">
-            <i class="fas fa-martini-glass-citrus"></i>
-          </span>
-          <span>AURA BARWARE</span>
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 whitespace-nowrap">
+          <svg class="w-8 h-8 sm:w-10 sm:h-10 text-brand-blue group-hover:scale-105 transition-transform duration-300" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cheersGoldHeaderCoach" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE79A" />
+                <stop offset="50%" stop-color="#F0B429" />
+                <stop offset="100%" stop-color="#B8893D" />
+              </linearGradient>
+            </defs>
+            <!-- Left Beer Mug -->
+            <g transform="translate(18, 30) rotate(14) translate(-18, -30)">
+              <path d="M11 18C11 15 13 13 16 13C17 11 20 10 23 12C25 10 29 11 29 14C31 14 32 16 31 18H11Z" fill="url(#cheersGoldHeaderCoach)"/>
+              <path d="M13 19L15 42C15 44.5 17 46 19.5 46H23.5C26 46 28 44.5 28 42L30 19H13Z" stroke="url(#cheersGoldHeaderCoach)" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M13 23H9C7 23 6 24.5 6 26.5V34.5C6 36.5 7 38 9 38H14" stroke="url(#cheersGoldHeaderCoach)" stroke-width="2.2"/>
+              <path d="M18 24V40M24 24V40" stroke="url(#cheersGoldHeaderCoach)" stroke-width="1.2" stroke-linecap="round" opacity="0.75"/>
+            </g>
+            <!-- Right Beer Mug -->
+            <g transform="translate(46, 30) rotate(-14) translate(-46, -30)">
+              <path d="M33 18C33 15 35 13 38 13C39 11 42 10 44 12C46 10 50 11 50 14C52 14 53 16 52 18H33Z" fill="url(#cheersGoldHeaderCoach)"/>
+              <path d="M34 19L36 42C36 44.5 38 46 40.5 46H44.5C47 46 49 44.5 49 42L51 19H34Z" stroke="url(#cheersGoldHeaderCoach)" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M51 23H55C57 23 58 24.5 58 26.5V34.5C58 36.5 57 38 55 38H50" stroke="url(#cheersGoldHeaderCoach)" stroke-width="2.2"/>
+              <path d="M40 24V40M46 24V40" stroke="url(#cheersGoldHeaderCoach)" stroke-width="1.2" stroke-linecap="round" opacity="0.75"/>
+            </g>
+            <!-- Cheers Clink Spark Stars -->
+            <path d="M32 6L33.2 10.8L38 12L33.2 13.2L32 18L30.8 13.2L26 12L30.8 10.8L32 6Z" fill="url(#cheersGoldHeaderCoach)"/>
+            <circle cx="26" cy="7" r="1.5" fill="url(#cheersGoldHeaderCoach)"/>
+            <circle cx="38" cy="7" r="1.5" fill="url(#cheersGoldHeaderCoach)"/>
+            <circle cx="32" cy="22" r="1.2" fill="url(#cheersGoldHeaderCoach)"/>
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-gray-900 dark:text-white font-serif tracking-[0.2em] xl:tracking-[0.25em] text-base sm:text-lg xl:text-xl font-bold uppercase leading-none">BARWARE</span>
+            <span class="text-[8px] xl:text-[9px] tracking-[0.25em] xl:tracking-[0.3em] uppercase text-brand-blue font-semibold mt-1">Luxury Mixology</span>
+          </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-2 xl:gap-6 lg:mx-2 xl:mx-4 shrink">
-          <a href="index.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 1</a>
-          <a href="home2.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 2</a>
-          <a href="products.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Products</a>
-          <a href="recipes.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-900 dark:text-white hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap border-brand-blue">Recipes</a>
-          <a href="gifting.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Gifting</a>
-          <a href="contact.html" class="nav-link font-medium text-xs xl:text-sm tracking-wider uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Contact</a>
+        <nav class="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-9 2xl:gap-11 lg:mx-1 xl:mx-8 2xl:mx-12 shrink-0">
+          <a href="index.html" class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 1</a>
+          <a href="home2.html" class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 2</a>
+          <a href="products.html" class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Products</a>
+          <a href="recipes.html" class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Recipes</a>
+          <a href="gifting.html" class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Gifting</a>
+          <a href="contact.html" class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Contact</a>
         </nav>
 
         <!-- Right Action Items -->
-        <div class="hidden lg:flex items-center space-x-2 gap-2 shrink-0">
-          <button class="theme-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle Theme">
+        <div class="hidden lg:flex items-center space-x-2 xl:space-x-4 gap-1.5 xl:gap-2 shrink-0">
+          <button class="theme-toggle-btn text-gray-600 dark:text-white focus:outline-none p-1.5 xl:p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle Theme">
             <i class="theme-toggle-icon fas fa-sun text-yellow-400"></i>
           </button>
-          <button class="rtl-toggle-btn text-gray-600 dark:text-white focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle RTL/LTR">
+          <button class="rtl-toggle-btn text-gray-600 dark:text-white focus:outline-none p-1.5 xl:p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" title="Toggle RTL/LTR">
             <i class="fas fa-right-left text-brand-blue"></i>
           </button>
           <div class="h-6 w-px bg-gray-200 dark:bg-gray-700/50"></div>
-          <a href="enquire.html" class="bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold text-xs tracking-widest uppercase px-4 xl:px-5 py-2.5 rounded-full transition-all duration-300 shadow-md whitespace-nowrap">Enquire</a>
+          <a href="enquire.html" class="bg-brand-blue hover:bg-brand-blue-hover text-black font-semibold text-xs tracking-wider xl:tracking-widest uppercase px-3.5 xl:px-5 py-2 xl:py-2.5 rounded-full transition-all duration-300 shadow-md whitespace-nowrap">Enquire</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -103,9 +131,31 @@
   <div id="mobile-menu" class="fixed inset-y-0 right-0 z-[100] w-full max-w-xs bg-white/95 dark:bg-charcoal-900/95 backdrop-blur-md shadow-2xl p-6 border-l border-gray-200 dark:border-white/10 transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between">
     <div>
       <div class="flex items-center justify-between mb-8">
-        <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-lg font-bold group">
-          <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
-          <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+        <a href="index.html" class="flex items-center gap-2.5 group">
+          <svg class="w-7 h-7 text-brand-blue" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cheersGoldMobCoach" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE79A" />
+                <stop offset="50%" stop-color="#F0B429" />
+                <stop offset="100%" stop-color="#B8893D" />
+              </linearGradient>
+            </defs>
+            <g transform="translate(18, 30) rotate(14) translate(-18, -30)">
+              <path d="M11 18C11 15 13 13 16 13C17 11 20 10 23 12C25 10 29 11 29 14C31 14 32 16 31 18H11Z" fill="url(#cheersGoldMobCoach)"/>
+              <path d="M13 19L15 42C15 44.5 17 46 19.5 46H23.5C26 46 28 44.5 28 42L30 19H13Z" stroke="url(#cheersGoldMobCoach)" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M13 23H9C7 23 6 24.5 6 26.5V34.5C6 36.5 7 38 9 38H14" stroke="url(#cheersGoldMobCoach)" stroke-width="2.2"/>
+            </g>
+            <g transform="translate(46, 30) rotate(-14) translate(-46, -30)">
+              <path d="M33 18C33 15 35 13 38 13C39 11 42 10 44 12C46 10 50 11 50 14C52 14 53 16 52 18H33Z" fill="url(#cheersGoldMobCoach)"/>
+              <path d="M34 19L36 42C36 44.5 38 46 40.5 46H44.5C47 46 49 44.5 49 42L51 19H34Z" stroke="url(#cheersGoldMobCoach)" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M51 23H55C57 23 58 24.5 58 26.5V34.5C58 36.5 57 38 55 38H50" stroke="url(#cheersGoldMobCoach)" stroke-width="2.2"/>
+            </g>
+            <path d="M32 6L33.2 10.8L38 12L33.2 13.2L32 18L30.8 13.2L26 12L30.8 10.8L32 6Z" fill="url(#cheersGoldMobCoach)"/>
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-gray-900 dark:text-white font-serif tracking-[0.25em] text-base font-bold uppercase leading-none">BARWARE</span>
+            <span class="text-[8px] tracking-[0.25em] uppercase text-brand-blue font-semibold mt-0.5">Luxury Mixology</span>
+          </div>
         </a>
         <button id="mobile-menu-close-btn" class="text-gray-800 dark:text-white hover:text-brand-blue p-2 focus:outline-none" aria-label="Close Menu">
           <i class="fas fa-times text-2xl"></i>
@@ -116,10 +166,9 @@
         <a href="index.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Home 1</a>
         <a href="home2.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Home 2</a>
         <a href="products.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Products</a>
-        <a href="recipes.html" class="nav-link text-base font-semibold text-brand-blue transition-colors py-1 border-b border-white/5">Recipes</a>
+        <a href="recipes.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Recipes</a>
         <a href="gifting.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Gifting</a>
         <a href="contact.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Contact</a>
-        <a href="enquire.html" class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Enquire</a>
       </nav>
     </div>
 
@@ -168,60 +217,66 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Recipe 1 -->
-        <article class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-56 overflow-hidden">
+        <article class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-56 overflow-hidden flex-shrink-0">
               <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=800&q=80" alt="Smokey Old Fashioned" class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[10px] font-bold text-brand-blue uppercase tracking-wider block">Bourbon & Rye</span>
-              <h3 class="card-heading text-gray-900 dark:text-white">Smokey Old Fashioned</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
-                Aged Kentucky Bourbon, Aromatic Angostura Bitters, smoked maple syrup, expressed orange peel, served over a clear ice block in a crystal rocks glass.
-              </p>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] font-bold text-brand-blue uppercase tracking-wider block min-h-[1.25rem] flex items-center">Bourbon & Rye</span>
+                <h3 class="card-heading text-gray-900 dark:text-white min-h-[2.5rem] flex items-center">Smokey Old Fashioned</h3>
+                <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] mt-1">
+                  Aged Kentucky Bourbon, Aromatic Angostura Bitters, smoked maple syrup, expressed orange peel, served over a clear ice block in a crystal rocks glass.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="p-6 pt-0 flex items-center justify-between text-[11px] font-semibold text-gray-400 border-t border-gray-200 dark:border-white/5 pt-4 mt-2">
+          <div class="p-6 pt-0 flex items-center justify-between text-[11px] font-semibold text-gray-400 border-t border-gray-200 dark:border-white/5 pt-4 mt-auto">
             <span>Glass: Diamond Rocks</span>
             <span class="text-brand-blue">3 Mins Prep</span>
           </div>
         </article>
 
         <!-- Recipe 2 -->
-        <article class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-56 overflow-hidden">
+        <article class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-56 overflow-hidden flex-shrink-0">
               <img src="https://images.unsplash.com/photo-1545438102-799c3991ffb2?auto=format&fit=crop&w=800&q=80" alt="Velvet Espresso Martini" class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[10px] font-bold text-brand-blue uppercase tracking-wider block">Vodka & Espresso</span>
-              <h3 class="card-heading text-gray-900 dark:text-white">Velvet Espresso Martini</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
-                Craft Vodka, fresh dark roasted espresso, artisanal coffee liqueur, hard-shaken in a gold shaker and double-strained into a chilled coupe.
-              </p>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] font-bold text-brand-blue uppercase tracking-wider block min-h-[1.25rem] flex items-center">Vodka & Espresso</span>
+                <h3 class="card-heading text-gray-900 dark:text-white min-h-[2.5rem] flex items-center">Velvet Espresso Martini</h3>
+                <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] mt-1">
+                  Craft Vodka, fresh dark roasted espresso, artisanal coffee liqueur, hard-shaken in a gold shaker and double-strained into a chilled coupe.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="p-6 pt-0 flex items-center justify-between text-[11px] font-semibold text-gray-400 border-t border-gray-200 dark:border-white/5 pt-4 mt-2">
+          <div class="p-6 pt-0 flex items-center justify-between text-[11px] font-semibold text-gray-400 border-t border-gray-200 dark:border-white/5 pt-4 mt-auto">
             <span>Glass: Crystal Coupe</span>
             <span class="text-brand-blue">4 Mins Prep</span>
           </div>
         </article>
 
         <!-- Recipe 3 -->
-        <article class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger">
-          <div>
-            <div class="relative h-56 overflow-hidden">
+        <article class="bg-slate-50 dark:bg-charcoal-800 border border-gray-100 dark:border-white/5 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover-card-trigger h-full">
+          <div class="flex flex-col flex-1">
+            <div class="relative h-56 overflow-hidden flex-shrink-0">
               <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=800&q=80" alt="Ruby Red Artisanal Negroni" class="w-full h-full object-cover">
             </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[10px] font-bold text-brand-blue uppercase tracking-wider block">Gin & Bitters</span>
-              <h3 class="card-heading text-gray-900 dark:text-white">Ruby Artisanal Negroni</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400">
-                London Dry Gin, Italian Red Bitters, Sweet Vermouth, stirred with a Japanese bar spoon over a crystal clear ice sphere.
-              </p>
+            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] font-bold text-brand-blue uppercase tracking-wider block min-h-[1.25rem] flex items-center">Gin & Bitters</span>
+                <h3 class="card-heading text-gray-900 dark:text-white min-h-[2.5rem] flex items-center">Ruby Artisanal Negroni</h3>
+                <p class="text-xs text-gray-500 dark:text-gray-400 min-h-[3.5rem] mt-1">
+                  London Dry Gin, Italian Red Bitters, Sweet Vermouth, stirred with a Japanese bar spoon over a crystal clear ice sphere.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="p-6 pt-0 flex items-center justify-between text-[11px] font-semibold text-gray-400 border-t border-gray-200 dark:border-white/5 pt-4 mt-2">
+          <div class="p-6 pt-0 flex items-center justify-between text-[11px] font-semibold text-gray-400 border-t border-gray-200 dark:border-white/5 pt-4 mt-auto">
             <span>Glass: Weighted Lowball</span>
             <span class="text-brand-blue">2 Mins Prep</span>
           </div>
@@ -350,9 +405,34 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         
         <div class="space-y-4">
-          <a href="index.html" class="flex items-center space-x-2 gap-2 text-gray-900 dark:text-white font-serif tracking-widest text-xl md:text-2xl font-bold group">
-            <i class="fas fa-martini-glass-citrus text-brand-blue"></i>
-            <span class="text-gray-900 dark:text-white">AURA BARWARE</span>
+          <a href="index.html" class="flex items-center gap-3 group">
+            <svg class="w-9 h-9 text-brand-blue group-hover:scale-105 transition-transform duration-300" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cheersGoldFootCoach" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFE79A" />
+                  <stop offset="50%" stop-color="#F0B429" />
+                  <stop offset="100%" stop-color="#B8893D" />
+                </linearGradient>
+              </defs>
+              <!-- Left Beer Mug -->
+              <g transform="translate(18, 30) rotate(14) translate(-18, -30)">
+                <path d="M11 18C11 15 13 13 16 13C17 11 20 10 23 12C25 10 29 11 29 14C31 14 32 16 31 18H11Z" fill="url(#cheersGoldFootCoach)"/>
+                <path d="M13 19L15 42C15 44.5 17 46 19.5 46H23.5C26 46 28 44.5 28 42L30 19H13Z" stroke="url(#cheersGoldFootCoach)" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M13 23H9C7 23 6 24.5 6 26.5V34.5C6 36.5 7 38 9 38H14" stroke="url(#cheersGoldFootCoach)" stroke-width="2.2"/>
+              </g>
+              <!-- Right Beer Mug -->
+              <g transform="translate(46, 30) rotate(-14) translate(-46, -30)">
+                <path d="M33 18C33 15 35 13 38 13C39 11 42 10 44 12C46 10 50 11 50 14C52 14 53 16 52 18H33Z" fill="url(#cheersGoldFootCoach)"/>
+                <path d="M34 19L36 42C36 44.5 38 46 40.5 46H44.5C47 46 49 44.5 49 42L51 19H34Z" stroke="url(#cheersGoldFootCoach)" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M51 23H55C57 23 58 24.5 58 26.5V34.5C58 36.5 57 38 55 38H50" stroke="url(#cheersGoldFootCoach)" stroke-width="2.2"/>
+              </g>
+              <!-- Cheers Clink Spark Stars -->
+              <path d="M32 6L33.2 10.8L38 12L33.2 13.2L32 18L30.8 13.2L26 12L30.8 10.8L32 6Z" fill="url(#cheersGoldFootCoach)"/>
+            </svg>
+            <div class="flex flex-col">
+              <span class="text-gray-900 dark:text-white font-serif tracking-[0.25em] text-xl font-bold uppercase leading-none">BARWARE</span>
+              <span class="text-[9px] tracking-[0.3em] uppercase text-brand-blue font-semibold mt-1">Luxury Mixology</span>
+            </div>
           </a>
           <p class="text-xs leading-relaxed text-gray-700 dark:text-gray-300">
             Your premier source for sleek home bar essentials, hand-blown lead-free crystal glassware, precision cocktail tools, decanters, and luxury gifting.
@@ -403,7 +483,7 @@
       </div>
 
       <div class="border-t border-gray-200 dark:border-white/5 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-600 dark:text-gray-400 gap-4">
-        <p>&copy; 2026 Aura Barware. All rights reserved. Premium Home Bar & Cocktail Accessories Store.</p>
+        <p>&copy; 2026 Barware. All rights reserved. Premium Home Bar & Cocktail Accessories Store.</p>
         <div class="flex items-center gap-6">
           <a href="#" class="hover:text-gray-900 dark:hover:text-white">Privacy Policy</a>
           <a href="#" class="hover:text-gray-900 dark:hover:text-white">Terms of Service</a>
