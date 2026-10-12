@@ -268,32 +268,77 @@ function initGalleryFilter() {
 
   if (filters.length === 0 || items.length === 0) return;
 
+  const resultLabel = document.getElementById('catalog-result-label');
+  const emptyState = document.getElementById('catalog-empty');
+
+  // Show how many products each category holds
+  filters.forEach(btn => {
+    const cat = btn.getAttribute('data-filter');
+    const countEl = btn.querySelector('.filter-count');
+    if (!countEl) return;
+    const total = cat === 'all'
+      ? items.length
+      : Array.from(items).filter(i => i.getAttribute('data-categories').split(' ').includes(cat)).length;
+    countEl.textContent = total;
+  });
+
+  function applyFilter(category) {
+    let visible = 0;
+    let activeLabel = 'All Categories';
+
+    filters.forEach(f => {
+      const isActive = f.getAttribute('data-filter') === category;
+      f.classList.toggle('active', isActive);
+      f.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      if (isActive) activeLabel = f.getAttribute('data-label') || f.textContent.trim();
+    });
+
+    items.forEach(item => {
+      const itemCats = item.getAttribute('data-categories').split(' ');
+      const show = category === 'all' || itemCats.includes(category);
+      item.dataset.show = show ? '1' : '0';
+
+      if (show) {
+        visible++;
+        item.classList.remove('is-hidden');
+        // Fade in on the next frame so the transition runs
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(12px)';
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          item.style.opacity = '1';
+          item.style.transform = '';
+        }));
+      } else {
+        item.style.opacity = '0';
+        item.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          if (item.dataset.show === '0') item.classList.add('is-hidden');
+        }, 250);
+      }
+    });
+
+    if (resultLabel) {
+      resultLabel.innerHTML = category === 'all'
+        ? `Showing all <strong class="text-brand-blue">${visible}</strong> products`
+        : `Showing <strong class="text-brand-blue">${visible}</strong> product${visible === 1 ? '' : 's'} in <strong class="text-brand-blue">${activeLabel}</strong>`;
+    }
+    if (emptyState) emptyState.classList.toggle('hidden', visible !== 0);
+  }
+
   filters.forEach(btn => {
     btn.addEventListener('click', () => {
       const category = btn.getAttribute('data-filter');
-
-      // Update active button classes
-      filters.forEach(f => f.classList.remove('bg-brand-blue', 'text-black', 'active'));
-      btn.classList.add('bg-brand-blue', 'text-black', 'active');
-
-      items.forEach(item => {
-        const itemCats = item.getAttribute('data-categories').split(' ');
-        if (category === 'all' || itemCats.includes(category)) {
-          item.style.display = 'block';
-          setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'scale(1)';
-          }, 50);
-        } else {
-          item.style.opacity = '0';
-          item.style.transform = 'scale(0.9)';
-          setTimeout(() => {
-            item.style.display = 'none';
-          }, 300);
-        }
-      });
+      applyFilter(category);
+      if (history.replaceState) {
+        history.replaceState(null, '', category === 'all' ? location.pathname : `?category=${category}`);
+      }
     });
   });
+
+  // Deep link support: products.html?category=glassware
+  const requested = new URLSearchParams(window.location.search).get('category');
+  const validCats = Array.from(filters).map(f => f.getAttribute('data-filter'));
+  applyFilter(requested && validCats.includes(requested) ? requested : 'all');
 }
 
 /* ==========================================

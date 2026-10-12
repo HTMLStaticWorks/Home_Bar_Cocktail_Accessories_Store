@@ -124,13 +124,13 @@
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-9 2xl:gap-11 lg:mx-1 xl:mx-8 2xl:mx-12 shrink-0">
+        <nav class="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-8 2xl:gap-10 lg:mx-1 xl:mx-6 2xl:mx-8 shrink-0">
           <a href="index.html"
-            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home
-            1</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Home 1</a>
           <a href="home2.html"
-            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-900 dark:text-white hover:text-brand-blue transition-colors py-2 border-b-2 border-brand-blue whitespace-nowrap">Home
-            2</a>
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-900 dark:text-white hover:text-brand-blue transition-colors py-2 border-b-2 border-brand-blue whitespace-nowrap">Home 2</a>
+          <a href="about.html"
+            class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">About Us</a>
           <a href="products.html"
             class="nav-link font-medium text-xs lg:text-sm tracking-widest uppercase text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors py-2 border-b-2 border-transparent whitespace-nowrap">Products</a>
           <a href="recipes.html"
@@ -227,18 +227,17 @@
 
       <nav class="flex flex-col space-y-4">
         <a href="index.html"
-          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Home
-          1</a>
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Home 1</a>
         <a href="home2.html"
-          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Home
-          2</a>
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Home 2</a>
+        <a href="about.html"
+          class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">About Us</a>
         <a href="products.html"
           class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Products</a>
         <a href="recipes.html"
           class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-gray-100 dark:border-white/5">Recipes</a>
         <a href="gifting.html"
           class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Gifting</a>
-
         <a href="contact.html"
           class="nav-link text-base font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-blue transition-colors py-1 border-b border-white/5">Contact</a>
       </nav>
@@ -268,61 +267,96 @@
     </div>
   </div>
 
-  <!-- HERO SECTION ALTERNATIVE LAYOUT -->
-  <section
-    class="relative min-h-[90vh] md:min-h-[65vh] lg:min-h-[70vh] xl:min-h-[80vh] flex items-center justify-center bg-[#070707] overflow-hidden bg-cover bg-center hero-bg-responsive pt-32 md:pt-24 lg:pt-28 xl:pt-40 pb-16 md:pb-12 lg:pb-16 xl:pb-24">
-    <!-- Overlay ambient glow -->
-    <div
-      class="absolute inset-0 bg-gradient-to-tr from-brand-blue/15 via-transparent to-amber-500/10 pointer-events-none">
+  <!-- HERO SECTION – SPLIT SHOWCASE LAYOUT (distinct from Home 1's centered full-bleed hero) -->
+  <section id="hero" class="home-hero bg-[#070707]">
+    <!-- Ambient background -->
+    <div class="absolute inset-0 pointer-events-none"
+      style="background: radial-gradient(ellipse 60% 70% at 85% 45%, rgba(240,180,41,0.18), transparent 60%), radial-gradient(ellipse 50% 60% at 5% 100%, rgba(240,180,41,0.08), transparent 60%);">
+    </div>
+    <div class="absolute inset-0 pointer-events-none opacity-[0.07]"
+      style="background-image: linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%); -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);">
     </div>
 
-    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center space-y-8">
-      <span
-        class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brand-blue/15 text-brand-blue border border-brand-blue/30">
-        Artisanal Craftsmanship
-      </span>
-      <h1 class="hero-heading text-white font-extrabold max-w-heading mx-auto">
-        An Elite Pathway <br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-white to-gray-400">To Mixology
-          Mastery.</span>
-      </h1>
-      <p class="body-text text-gray-200 max-w-paragraph mx-auto">
-        From hand-blown crystal glassware to Japanese precision steel shakers, we equip your home bar with luxury
-        accessories, curated gift sets, and craft cocktail essentials.
-      </p>
+    <div class="relative z-10 max-w-7xl mx-auto w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="products.html"
-          class="bg-brand-blue hover:bg-brand-blue-hover text-black font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-full shadow-lg transition-all">
-          Explore Collection
-        </a>
-        <a href="gifting.html"
-          class="bg-transparent hover:bg-white/5 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-full border border-white/20 hover:border-white transition-all">
-          Curated Gifting
-        </a>
-      </div>
+        <!-- Left: Content (left-aligned) -->
+        <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+          <div class="inline-flex items-center gap-3 justify-center lg:justify-start">
+            <span class="h-px w-10 bg-brand-blue"></span>
+            <span class="text-brand-blue font-semibold text-xs uppercase tracking-[0.3em]">The Home Bartender's Atelier</span>
+          </div>
 
-      <!-- Separate Image for Mobile (360px view) -->
-      <div
-        class="block sm:hidden mt-8 w-full max-w-sm mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-xl aspect-video">
-        <img src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/di-2026-1769081758-Ayx2Q/amj-1774778677-BA1IA/hbd-1775198191-AmcM8/bar-5-1776090818-sDtCp.png"
-          alt="Luxury Home Barware Setting" class="w-full h-full object-cover">
-      </div>
+          <h1 class="hero-heading text-white font-extrabold">
+            Your Home Bar, <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-[#ffe79a] to-white">Elevated.</span>
+          </h1>
 
-      <!-- Mini feature list -->
-      <div class="pt-6 border-t border-white/5 grid grid-cols-3 gap-4 text-center max-w-sm mx-auto">
-        <div>
-          <p class="text-xs uppercase text-gray-500 font-semibold tracking-wider">Glassware</p>
-          <p class="text-base font-serif font-bold text-brand-blue mt-0.5">Lead-Free Crystal</p>
+          <p class="body-text text-gray-300 max-w-paragraph mx-auto lg:mx-0">
+            From hand-blown crystal glassware to Japanese precision steel shakers, we equip your home bar with luxury
+            accessories, curated gift sets, and craft cocktail essentials.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="products.html" id="hero-shop-now" class="btn-primary-cta">
+              Shop Now <i class="fas fa-arrow-right text-xs"></i>
+            </a>
+            <a href="enquire.html" id="hero-build-bar" class="btn-secondary-cta">
+              <i class="fas fa-martini-glass-citrus text-xs"></i> Build Your Home Bar
+            </a>
+          </div>
+
+          <!-- Stat strip -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-xl mx-auto lg:mx-0">
+            <div class="lg:border-l lg:border-brand-blue/40 lg:pl-4 text-center lg:text-left">
+              <p class="text-2xl font-serif font-bold text-brand-blue leading-none">12K+</p>
+              <p class="text-xs uppercase text-gray-400 font-semibold tracking-wider mt-1.5">Home Bars Equipped</p>
+            </div>
+            <div class="lg:border-l lg:border-brand-blue/40 lg:pl-4 text-center lg:text-left">
+              <p class="text-2xl font-serif font-bold text-brand-blue leading-none">4.9<i
+                  class="fas fa-star text-sm ml-1"></i></p>
+              <p class="text-xs uppercase text-gray-400 font-semibold tracking-wider mt-1.5">Average Rating</p>
+            </div>
+            <div class="lg:border-l lg:border-brand-blue/40 lg:pl-4 text-center lg:text-left">
+              <p class="text-2xl font-serif font-bold text-brand-blue leading-none">45+</p>
+              <p class="text-xs uppercase text-gray-400 font-semibold tracking-wider mt-1.5">Countries Shipped</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p class="text-xs uppercase text-gray-500 font-semibold tracking-wider">Bar Tools</p>
-          <p class="text-base font-serif font-bold text-brand-blue mt-0.5">Japanese Steel</p>
+
+        <!-- Right: Arched visual with floating cards -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-[300px] sm:max-w-[340px] lg:max-w-[360px] xl:max-w-[400px]">
+            <div class="hero2-arch h-[380px] sm:h-[420px] lg:h-[440px] xl:h-[500px]">
+              <img src="assets/images/home_bar_hero_portrait.jpg"
+                alt="Brushed gold cocktail shaker and crystal coupe on a marble home bar" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Floating: quality card -->
+            <div class="hero2-float absolute -left-4 sm:-left-12 top-16 rounded-2xl px-4 py-3 flex items-center gap-3">
+              <span
+                class="w-10 h-10 rounded-xl bg-brand-blue/15 border border-brand-blue/30 flex items-center justify-center text-brand-blue">
+                <i class="fas fa-gem"></i>
+              </span>
+              <div>
+                <p class="text-white font-semibold text-sm leading-tight">100% Lead-Free</p>
+                <p class="text-gray-400 text-xs">Titanium crystal</p>
+              </div>
+            </div>
+
+            <!-- Floating: reviews card -->
+            <div
+              class="hero2-float delay absolute -right-4 sm:-right-10 bottom-20 rounded-2xl px-4 py-3">
+              <div class="flex text-brand-blue gap-0.5 text-xs">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-white font-semibold text-sm mt-1 leading-tight">2,400+ Reviews</p>
+              <p class="text-gray-400 text-xs">Verified buyers</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p class="text-xs uppercase text-gray-500 font-semibold tracking-wider">Shipping</p>
-          <p class="text-base font-serif font-bold text-brand-blue mt-0.5">Global Delivery</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -1067,13 +1101,13 @@
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-3 z-10 shrink-0 w-full md:w-auto">
-          <a href="enquire.html"
-            class="bg-brand-blue hover:bg-brand-blue-hover text-black font-bold uppercase tracking-widest text-xs px-6 py-3.5 rounded-full text-center shadow-lg transition-all">
-            Enquire Now
+          <a href="products.html" id="home2-cta-shop-now"
+            class="btn-primary-cta text-center">
+            Shop Now <i class="fas fa-arrow-right text-xs"></i>
           </a>
-          <a href="contact.html"
-            class="bg-transparent hover:bg-white/10 text-white font-bold uppercase tracking-widest text-xs px-6 py-3.5 rounded-full text-center border border-white/20 transition-all">
-            Contact Support
+          <a href="enquire.html" id="home2-cta-build-bar"
+            class="btn-secondary-cta text-center">
+            <i class="fas fa-martini-glass-citrus text-xs"></i> Build Your Home Bar
           </a>
         </div>
       </div>
@@ -1151,6 +1185,7 @@
           <ul class="space-y-2 text-xs">
             <li><a href="index.html" class="hover:text-brand-blue transition-colors">Home 1</a></li>
             <li><a href="home2.html" class="hover:text-brand-blue transition-colors">Home 2</a></li>
+            <li><a href="about.html" class="hover:text-brand-blue transition-colors">About Us</a></li>
             <li><a href="products.html" class="hover:text-brand-blue transition-colors">Products</a></li>
             <li><a href="recipes.html" class="hover:text-brand-blue transition-colors">Recipes</a></li>
             <li><a href="gifting.html" class="hover:text-brand-blue transition-colors">Gifting</a></li>
