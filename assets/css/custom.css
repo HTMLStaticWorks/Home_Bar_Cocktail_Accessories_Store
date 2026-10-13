@@ -699,3 +699,121 @@ html.dark .gallery-filter-btn .filter-count { background: rgba(255, 255, 255, 0.
   background: linear-gradient(135deg, #ffd978, #f0b429);
   color: #0a0a0a;
 }
+
+/* ==========================================================
+   EQUAL HERO HEIGHT – About, Products & Recipes
+   Same fixed height per breakpoint so the three heroes match
+   regardless of how much content each one holds.
+   ========================================================== */
+.inner-hero.hero-equal {
+  height: var(--hero-equal-h, 50rem);
+  min-height: 0 !important;
+}
+
+@media (min-width: 640px) {
+  .inner-hero.hero-equal { --hero-equal-h: 36rem; }
+}
+
+@media (min-width: 1024px) {
+  .inner-hero.hero-equal { --hero-equal-h: max(36rem, 52vh); }
+}
+
+@media (min-width: 1280px) {
+  .inner-hero.hero-equal { --hero-equal-h: max(38rem, 62vh); }
+}
+
+@media (min-width: 1400px) {
+  .inner-hero.hero-equal { --hero-equal-h: max(40rem, 70vh); }
+}
+
+/* ==========================================================
+   ABOUT – "The Barware Commitment" spec table
+   Fixed label column so every value starts on the same
+   vertical line (desktop, tablet and 368px mobile).
+   ========================================================== */
+.spec-row {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  column-gap: 0.75rem;
+  align-items: start;
+}
+
+@media (min-width: 640px) {
+  .spec-row { grid-template-columns: 11rem minmax(0, 1fr); column-gap: 1rem; }
+}
+
+.spec-row > span:first-child { text-align: left; }
+
+.spec-value {
+  display: grid;
+  grid-template-columns: 1rem minmax(0, 1fr);
+  column-gap: 0.4rem;
+  align-items: start;
+  text-align: left;
+}
+
+.spec-value > i { line-height: 1.6; }
+
+/* ==========================================================
+   EQUAL-SIZE CTA PAIR (stays inside its card)
+   ========================================================== */
+.cta-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .cta-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.cta-pair > a {
+  width: 100%;
+  min-height: 3.5rem;
+  padding: 0.9rem 1.25rem;
+  white-space: normal;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   PRODUCTS – card footers (price + Request) never overflow
+   Featured Products (4-col at 1024px) & Premium Collection
+   ========================================================== */
+#featured article > div,
+#premium article > div {
+  min-width: 0;
+}
+
+#featured article .mt-auto,
+#premium article .justify-between {
+  flex-wrap: wrap;
+}
+
+#featured article a[href="enquire.html"],
+#premium article a[href="enquire.html"] {
+  flex-shrink: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  #featured article .mt-auto,
+  #premium article .justify-between {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  #featured article .mt-auto > a,
+  #premium article .justify-between > a {
+    width: 100%;
+  }
+
+  #featured article .mt-auto > span,
+  #premium article .justify-between > span {
+    text-align: center;
+  }
+
+  #premium article > div.p-8 {
+    padding: 1.5rem;
+  }
+}
